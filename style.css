@@ -434,8 +434,8 @@ main {
 .lightbox-content {
     position: relative;
     width: 100%;
-    max-width: 90vw;
-    max-height: 70vh;
+    max-width: 95vw;
+    max-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -759,6 +759,15 @@ main {
     animation-play-state: paused;
 }
 
+.sold-carousel-track .vehicle-card {
+    flex-basis: 350px; /* Set a smaller base width */
+    flex-shrink: 0;
+}
+
+.sold-carousel-track .vehicle-card .vehicle-title {
+    font-size: 1rem; /* Make the title font smaller */
+}
+
 .vehicle-card.is-sold .vehicle-card-img {
     position: relative;
     overflow: hidden;
@@ -929,6 +938,21 @@ main {
     .contact-details-section {
         text-align: center;
     }
+
+    .sold-carousel-track .vehicle-card {
+        flex-basis: 180px;
+    }
+    .sold-carousel-track .vehicle-card .vehicle-title {
+        font-size: 0.9rem;
+    }
+
+        .vehicle-card.is-sold .vehicle-card-img::before {
+        width: 150px;
+        font-size: 0.9rem;
+        padding: 4px 0;
+        top: 15px;
+        left: -35px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -947,4 +971,5 @@ main {
     .vehicle-listing__details .vehicle-description {
         font-size: 0.85rem;
     }
+
 }
