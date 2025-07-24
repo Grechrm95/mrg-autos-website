@@ -1,4 +1,37 @@
 const vehicleDatabase = [
+       {
+        id: 'Peugeot-2008-2017 ',
+        title: 'Peugeot 2008 Active',
+        year: 2017,
+        price: '£5200',
+        mileage: 69000,
+        fuelType: 'Petrol',
+        transmission: 'Manual',
+        status: 'available',
+        images: [
+            'cars/peugeot2008/main.jpg',
+            'cars/peugeot2008/main2.jpg',
+            'cars/peugeot2008/frontpassenger1.jpg',
+            'cars/peugeot2008/frontpassenger2.jpg',
+            'cars/peugeot2008/front.jpg',
+            'cars/peugeot2008/reardriver1.jpg',
+            'cars/peugeot2008/reardriver2.jpg',
+            'cars/peugeot2008/rearpassenger.jpg',
+            'cars/peugeot2008/rearpassenger2.jpg',
+            'cars/peugeot2008/rearboot.webp',
+            'cars/peugeot2008/bootopen.webp',
+            'cars/peugeot2008/dashboardmain.jpg',
+            'cars/peugeot2008/steeringwheeldash.jpg',
+            'cars/peugeot2008/steeringwheel.webp',
+            'cars/peugeot2008/driverseats.webp',
+            'cars/peugeot2008/passengerseats.webp',
+            'cars/peugeot2008/rearseats.webp',
+            'cars/peugeot2008/rearseats2.webp',
+        ],
+        description: `Peugeot 2008 1.2 Puretech in good condition. The car comes with 2 Keys, Full Service History and MOT until July 2026. The car has recently had some work done to it aswell which includes a New Timing Belt, Fresh Service and New Spark Plugs. I've got the invoices of all the work that's been carried out. 
+The car comes with some nice features which includes Central Locking, Electric Mirrors, Electric Windows, Air Conditioning, AM/FM radio with Bluetooth Connectivity, Multi-Functioning Steering Wheel, Cruise Control and Rear Parking Sensors
+The car does have a few age related marks but overall its in good condition.`
+    },   
     {
         id: 'nissan-xtrail-2016',
         title: 'Nissan X-Trail Acenta',
@@ -143,7 +176,7 @@ const vehicleDatabase = [
     },
     {
         id: 'audi-a1-2013',
-        title: 'Audi Ai Sport',
+        title: 'Audi A1 Sport',
         year: 2013,
         status: 'sold',
         images: [ 'cars/soldcars/audiA1.webp' ],

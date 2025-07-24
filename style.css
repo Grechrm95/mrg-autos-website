@@ -1,28 +1,27 @@
 /* General Body and Typography */
+
+/* Universal reset for all elements */
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* Makes layout math more intuitive */
     padding: 0;
     margin: 0;
 }
 
 :root {
-    /* --- YOUR COLOR PALETTE --- */
-    --primary-color: #c90b24;    /* Your brand red */
-    --text-color: #1E1917;        /* Your dark licorice for text */
-    --dark-background: #1E1917;   /* Using licorice for dark surfaces */
-       
-    /* --- General UI Colors --- */
-    --background-color: #f4f4f9; /* A light grey for the page background */
-    --surface-color: #ffffff;    /* White for card backgrounds */
+    /* --- COLOR Theme PALETTE --- */
+    --primary-color: #c90b24;    /* Brand red */
+    --dark-background: #1E1917;   /* Dark color for text and backgrounds */
+    --background-color: #f4f4f9; /* Light grey for the main page background */
     --white: #ffffff;
     --border-color: #e0e0e0;
 }
 
 html {
-    scroll-behavior: smooth;
-    font-size: 16px; 
+     scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+    font-size: 16px; /* Sets the base font size for the document (1rem = 16px) */
 }
 
+/* Prevents the background from scrolling when the image lightbox is open */
 body.lightbox-active {
     overflow: hidden;
 }
@@ -30,37 +29,39 @@ body.lightbox-active {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--background-color);
-    color: var(--text-color);
+    color: var(--dark-background);
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    display: flex; /* Enables Flexbox for layout */
+    flex-direction: column; /* Stacks children (header, main, footer) vertically */
+    min-height: 100vh; /* Ensures the body is at least the full height of the viewport */
 }
 
+/* A centered container for content sections to limit their width on large screens */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1.5rem; 
 }
 
-
+/* Default styles for headings */
 h1, h2, h3, h4 {
     line-height: 1.2;
     margin-bottom: 1rem;
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--dark-background);
 }
 h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.5rem; }
 h4 { font-size: 1.2rem; }
 
-
+/* Default style for links */
 a {
     text-decoration: none;
     color: var(--primary-color);
 }
 
+/* Styles for lists in static page sections like "About Us" */
 .page-section ul {
     list-style-position: inside;
     padding-left: 0;
@@ -74,11 +75,11 @@ a {
 .main-header {
     background-color: var(--primary-color);
     border-bottom: 3px solid var(--dark-background);
-    position: fixed;
+    position: fixed; /* Fixes the header to the viewport */
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1000; /* Ensures the header stays on top of other content */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,7 +93,7 @@ a {
 }
 
 .main-nav .navbar {
-    display: flex;
+    display: flex; /* Aligns nav items horizontally */
     gap: 25px;
     list-style: none;
 }
@@ -105,6 +106,7 @@ a {
     transition: all 0.3s ease;
 }
 
+/* Style for the active page link and on hover */
 .main-nav .navbar a:hover,
 .main-nav .navbar a.active {
     color: var(--white);
@@ -112,6 +114,7 @@ a {
     font-weight: bold;
 }
 
+/* Hamburger menu icon - hidden on desktop */
 #menu-icon {
     display: none;
     font-size: 2.5rem;
@@ -123,12 +126,13 @@ a {
 
 /* Main Content Area */
 main {
-    padding-top: 80px;
-    flex-grow: 1;
+    padding-top: 80px; /* Prevents content from being hidden behind the fixed header */
+    flex-grow: 1; /* Allows the main content to grow and push the footer down */
 }
 
 /* Homepage Hero Section */
 .hero-section {
+     /* Creates a dark overlay on top of the background image for text readability */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('cars/soldcars/mazdamx5.jpg') no-repeat center center/cover;
     height: 80vh;
     display: flex;
@@ -141,10 +145,11 @@ main {
 
 .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 2;  /* Ensures content is above the background gradient */
     padding: 0 1rem;
 }
 
+/* Adds a shadow to hero text to make it stand out */
 .hero-content h1, .hero-content p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     color: white;
@@ -153,7 +158,7 @@ main {
 /* Homepage Reviews Section */
 .testimonials-section {
     padding: 4rem 0;
-    background-color: var(--surface-color);
+    background-color: var(--white);
 }
 
 .section-header {
@@ -180,7 +185,7 @@ main {
 }
 
 
-/* --- Inventory Page Specific --- */
+/* --- Inventory Page --- */
 #inventory-list {
     display: flex;
     flex-direction: column;
@@ -188,7 +193,7 @@ main {
 }
 
 .vehicle-listing {
-    background: var(--surface-color);
+    background: var(--white);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 2rem;
@@ -218,7 +223,7 @@ main {
     font-weight: bold;
     color: var(--primary-color);
     margin: 0;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevents the price from wrapping to a new line */
 }
 
 .vehicle-listing__content {
@@ -228,6 +233,7 @@ main {
     gap: 2rem;
 }
 
+/* This rule reverses the order of the columns for every other car listing */
 .vehicle-listing--reverse .vehicle-listing__content .vehicle-listing__image-gallery {
     grid-column: 2 / 3;
     grid-row: 1;
@@ -250,6 +256,7 @@ main {
     margin-top: 0;
 }
 
+/* Styles for the vehicle specification icons and text */
 .vehicle-specs {
     list-style: none;
     padding: 0;
@@ -295,6 +302,7 @@ main {
     border: 1px solid var(--border-color);
 }
 
+/* Styles for the small clickable image thumbnails */
 .vehicle-listing__thumbnails {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -316,6 +324,7 @@ main {
     opacity: 1;
 }
 
+/* Style for the currently selected thumbnail */
 .vehicle-listing__thumbnails .thumbnail-img.active {
     border-color: var(--primary-color);
     opacity: 1;
@@ -326,7 +335,7 @@ main {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 3rem 0 1rem 0;
-    margin-top: auto;
+    margin-top: auto; /* Pushes the footer to the bottom in flexbox layout */
 }
 
 .footer-container {
@@ -365,7 +374,6 @@ main {
 }
 
 .footer-column ul a:hover {
-    color: var(--white);
     border-bottom: var(--white) 2px solid;
     font-weight: bold;
 }
@@ -397,7 +405,14 @@ main {
     font-size: 0.9rem;
 }
 
-/* Lightbox Overlay */
+/* This makes the icon itself un-clickable, so the tap always registers on the parent <a> link */
+.footer-socials a i {
+    pointer-events: none;
+}
+
+/* Lightbox Styles */
+
+/* The main overlay for the full-screen image gallery */
 #lightbox-overlay {
     position: fixed;
     top: 0;
@@ -405,7 +420,7 @@ main {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    z-index: 2000;
+    z-index: 2000; /* High z-index to ensure it's on top of everything */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -413,10 +428,12 @@ main {
     padding: 20px;
 }
 
+/* Class to hide the lightbox */
 #lightbox-overlay.lightbox-hidden {
     display: none;
 }
 
+/* The 'X' close button */
 .lightbox-close {
     position: absolute;
     top: 20px;
@@ -426,6 +443,7 @@ main {
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;
+     z-index: 10;  /* Ensures the close button is on top of the lightbox image container */
 }
 .lightbox-close:hover {
     color: #bbb;
@@ -434,8 +452,8 @@ main {
 .lightbox-content {
     position: relative;
     width: 100%;
-    max-width: 95vw;
-    max-height: 90vh;
+    max-width: 100vw;
+    max-height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -444,9 +462,10 @@ main {
 .lightbox-main-image {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
+    object-fit: contain; /* Ensures the whole image is visible without distortion */
 }
 
+/* The previous/next arrow buttons in the lightbox */
 .lightbox-prev, .lightbox-next {
     cursor: pointer;
     position: absolute;
@@ -457,7 +476,7 @@ main {
     font-weight: bold;
     font-size: 30px;
     transition: 0.3s ease;
-    user-select: none;
+    user-select: none; /* Prevents text selection on double click */
     background-color: rgba(0,0,0,0.3);
 }
 .lightbox-prev { left: 0; }
@@ -466,6 +485,7 @@ main {
     background-color: rgba(0,0,0,0.8);
 }
 
+/* Image counter (e.g., "Image 1 of 12") */
 .lightbox-info {
     position: absolute;
     bottom: 10px;
@@ -478,6 +498,7 @@ main {
     font-size: 0.9rem;
 }
 
+/* The scrollable thumbnail container at the bottom of the lightbox */
 .lightbox-thumbnails-container {
     margin-top: 15px;
     width: 100%;
@@ -507,9 +528,10 @@ main {
     border-color: var(--primary-color);
 }
 
-/* On-page Carousel Styles */
+/* --- On-page Image Carousel Arrows --- */
 .listing-prev,
 .listing-next {
+     /* (Styles for the arrows on the main inventory page listings) */
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -521,7 +543,7 @@ main {
     transition: all 0.3s ease;
     user-select: none;
     background-color: rgba(0,0,0,0.2);
-    opacity: 0;
+    opacity: 0; /* Hidden by default, appear on hover */
     z-index: 5;
 }
 
@@ -538,7 +560,7 @@ main {
     background-color: rgba(0,0,0,0.6);
 }
 
-/* Contact Page Styles */
+/* Contact Page */
 .contact-header {
     text-align: center;
     margin-bottom: 2rem;
@@ -546,7 +568,7 @@ main {
 
 .contact-container {
     display: grid;
-    grid-template-columns: 2fr auto 1fr;
+    grid-template-columns: 2fr auto 1fr; /* 3 columns: form, divider, details */
     gap: 3rem;
     align-items: flex-start;
 }
@@ -579,7 +601,7 @@ main {
 }
 
 .contact-divider-horizontal {
-    display: none;
+    display: none; /* Hidden on desktop, shown on mobile */
     width: 100%;
     height: 1px;
     background-color: var(--border-color);
@@ -589,7 +611,7 @@ main {
 
 .contact-details-section h3 {
     font-weight: bold;
-    color: var(--text-color);
+    color: var(--dark-background);
     margin-bottom: 1rem;
 }
 
@@ -603,8 +625,9 @@ main {
     color: var(--primary-color);
 }
 
-/* Confirmation Modal Styles */
+/* Confirmation Modal  */
 .modal-overlay {
+     /* (Styles for the "Message Sent!" pop-up) */
     position: fixed;
     top: 0;
     left: 0;
@@ -625,7 +648,7 @@ main {
 }
 
 .modal-content {
-    background-color: var(--surface-color);
+    background-color: var(--white);
     padding: 2rem 3rem;
     border-radius: 8px;
     text-align: center;
@@ -652,12 +675,12 @@ main {
 }
 
 .modal-close:hover {
-    color: var(--text-color);
+    color: var(--dark-background);
 }
 
 .modal-icon {
     font-size: 5rem;
-    color: #28a745;
+    color: #28a745; /* Green checkmark color */
     margin-bottom: 1rem;
 }
 
@@ -670,7 +693,7 @@ main {
     margin-bottom: 0;
 }
 
-/* Featured & Sold Vehicles Section Styles */
+/* Featured & Sold Vehicles*/
 .featured-vehicles-section,
 .sold-vehicles-section {
     padding: 4rem 0;
@@ -679,12 +702,12 @@ main {
 
 .featured-vehicles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Responsive grid */
     gap: 1.5rem;
 }
 
 .vehicle-card {
-    background: var(--surface-color);
+    background: var(--white);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     overflow: hidden;
@@ -721,7 +744,7 @@ main {
 
 .vehicle-card .vehicle-title {
     font-size: 1.25rem;
-    color: var(--text-color);
+    color: var(--dark-background);
     margin-bottom: 0.5rem;
 }
 
@@ -736,6 +759,7 @@ main {
     margin-top: auto;
 }
 
+/* Fading effect on the edges of the scrolling "Sold Cars" carousel */
 .sold-carousel-viewport {
     width: 100%;
     overflow: hidden;
@@ -746,17 +770,17 @@ main {
 
 @keyframes slide {
     from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    to { transform: translateX(-50%); } /* Moves the track to the left */
 }
 
 .sold-carousel-track {
     display: flex;
     gap: 1.5rem;
-    animation: slide 30s linear infinite;
+    animation: slide 30s linear infinite; /* The looping scroll animation */
 }
 
 .sold-carousel-viewport:hover .sold-carousel-track {
-    animation-play-state: paused;
+    animation-play-state: paused; /* Pauses the animation on hover */
 }
 
 .sold-carousel-track .vehicle-card {
@@ -773,6 +797,7 @@ main {
     overflow: hidden;
 }
 
+/* "SOLD" banner on sold vehicle cards */
 .vehicle-card.is-sold .vehicle-card-img::before {
     content: 'SOLD';
     position: absolute;
@@ -781,7 +806,7 @@ main {
     width: 200px;
     transform: rotate(-45deg);
     background-color: rgba(195, 12, 48, 0.85);
-    color: white;
+    color: var(--white);
     padding: 6px 0;
     font-weight: bold;
     z-index: 2;
@@ -796,10 +821,12 @@ main {
 
 
 /* --- OPTIMIZED: Refactored Button Styles --- */
+/* Base styles applied to all button types */
 .btn,
 .btn-enquire,
 .btn-submit,
 .btn-details {
+     /* (Shared button styles) */
     display: inline-block;
     background-color: var(--primary-color);
     color: var(--white);
@@ -820,9 +847,9 @@ main {
     background-color: #A00000;
 }
 
-/* Specific overrides that are unique */
+/* Specific overrides for unique button types */
 .btn-enquire {
-    margin-top: auto; 
+    margin-top: auto; /* Pushes this button to the bottom of its flex container */
 }
 
 .btn-details {
@@ -838,9 +865,11 @@ main {
 
 /* ====== Responsive Styles ====== */
 
+/* These @media queries apply styles only when the screen size meets certain conditions */
 @media (min-width: 2000px) {
+     /* (Styles to make content larger on huge monitors) */
     body {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .container, .footer-container {
@@ -861,9 +890,11 @@ main {
 }
 
 @media (max-width: 900px) {
+    /* For tablets and smaller desktops */
     .vehicle-listing__content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Stacks the vehicle image and details vertically */
     }
+
 
     .vehicle-listing--reverse .vehicle-listing__content .vehicle-listing__image-gallery,
     .vehicle-listing--reverse .vehicle-listing__content .vehicle-listing__details {
@@ -872,9 +903,10 @@ main {
     }
 }
 
+/* For smaller tablets and large phones */
 @media (max-width: 768px) {
     html {
-        font-size: 15px;
+        font-size: 15px; /* Slightly reduce the base font size */
     }
 
     .container, .footer-container {
@@ -888,6 +920,11 @@ main {
     
     .vehicle-listing__content {
         gap: 1.5rem;
+    }
+
+    .hero-section {
+        height: 60vh;
+        padding: 2rem 1rem;
     }
 
     h1, .hero-content h1 { font-size: 1.8rem; }
@@ -914,14 +951,17 @@ main {
     .footer-column h4 { font-size: 1.1rem; }
     .footer-column a, .footer-copyright p { font-size: 0.9rem; }
 
-    #menu-icon { display: block; }
+    #menu-icon { display: block; } /* Show the hamburger menu icon */
+
+      /* Hides the desktop nav and prepares the mobile nav to slide in */
     .main-nav { position: absolute; top: 80px; left: -100%; width: 100%; background-color: var(--primary-color); transition: left 0.3s ease-in-out; border-bottom: 1px solid var(--border-color); }
-    .main-nav.active { left: 0; }
-    .main-nav .navbar { flex-direction: column; align-items: center; padding: 0; gap: 0; }
+    .main-nav.active { left: 0; }/* Slides the menu into view */
+    .main-nav .navbar { flex-direction: column; align-items: center; padding: 0; gap: 0; } /* Stacks nav links vertically */
     .main-nav .navbar li { width: 100%; text-align: center; }
     .main-nav .navbar a { display: block; padding: 1rem; border-bottom: 1px solid #c30c30; }
     .main-nav .navbar a:hover, .main-nav .navbar a.active { background-color: var(--white); color: var(--primary-color); border-bottom-color: var(--primary-color); }
 
+     /* Stacks the contact form and details vertically */
      .contact-container {
         grid-template-columns: 1fr;
         gap: 0;
@@ -955,6 +995,7 @@ main {
     }
 }
 
+/* For mobile phones */
 @media (max-width: 425px) {
     html {
         font-size: 14px;
@@ -972,4 +1013,17 @@ main {
         font-size: 0.85rem;
     }
 
+    .hero-section {
+        height: 40vh;
+        padding: 1.5rem 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content a{
+        margin-top: 5px;
+        padding: 8px 16px;
+    }
 }
