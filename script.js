@@ -258,9 +258,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const soldVehicles = vehicleDatabase.filter(car => car.status === 'sold');
         displaySoldVehicles(soldVehicles);
     }
-});
 
-// --- Footer Facebook Link Fix ---
+    // --- Footer Facebook Link Fix ---
     // This forcefully handles the click on the Facebook icon to prevent other scripts from blocking it on mobile.
     const facebookLink = document.querySelector('.footer-socials a[href*="facebook.com"]');
     if (facebookLink) {
@@ -275,3 +274,6 @@ document.addEventListener("DOMContentLoaded", () => {
             window.open(url, '_blank');
         });
     }
+});
+
+
