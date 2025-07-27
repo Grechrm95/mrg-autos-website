@@ -1,3 +1,4 @@
+//car listing data for a vehicle inventory system
 const vehicleDatabase = [
        {
         id: 'Peugeot-2008-2017 ',
@@ -160,6 +161,8 @@ The car does have a few age related marks but overall its in good condition.`
         ],
         description: `Stunning Citroen C3 Aircross 1.2 PureTech in good condition. The car comes with MOT until April 2026, Service History and 2 Keys. Its had the Timing Belt done 1000 miles ago with the invoice to go with. Ive also had a new battery fitted and New Brakes and Discs on the Rear. The car comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, Air Conditioning, Cruise Control, Multi-Functioning Steering Wheel, Lane Assist, Hill Assist and AM/FM Stereo with Bluetooth and Apple Carplay/ Android Auto.`
     }, 
+
+    // Sold Vehicles section
     {
         id: 'peugeot-2008-2017',
         title: 'Peugeot 2008 Allure',
