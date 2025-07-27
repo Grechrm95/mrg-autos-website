@@ -271,7 +271,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const url = this.getAttribute('href');
 
            // Navigate the current tab to the new URL. This is a more direct and reliable method.
-        window.location.href = url;
+           window.location.href = url;
         });
     }
 });
