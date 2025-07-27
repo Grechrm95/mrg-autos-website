@@ -104,7 +104,7 @@ The car does have a few age related marks but overall its in good condition.`
         id: 'ford-transit-custom-2016',
         title: 'Ford Transit Custom Euro 6 ',
         year: 2016,
-        price: '£7995',
+        price: '£7500',
         mileage: 84000,
         fuelType: 'Diesel',
         transmission: 'Manual',

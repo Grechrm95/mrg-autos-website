@@ -270,8 +270,8 @@ document.addEventListener("DOMContentLoaded", () => {
             // Get the URL from the link's href attribute.
             const url = this.getAttribute('href');
 
-            // Forcefully open the URL in a new tab. This method bypasses most blockers.
-            window.open(url, '_blank');
+           // Navigate the current tab to the new URL. This is a more direct and reliable method.
+        window.location.href = url;
         });
     }
 });
