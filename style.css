@@ -951,6 +951,15 @@ main {
     .footer-column h4 { font-size: 1.1rem; }
     .footer-column a, .footer-copyright p { font-size: 0.9rem; }
 
+    /* This disables the hover animation on mobile to prevent the link bug */
+    .footer-socials a:hover {
+    background-color: transparent;
+    border: none;
+    transform: none;
+    opacity: 1;
+}
+
+
     #menu-icon { display: block; } /* Show the hamburger menu icon */
 
       /* Hides the desktop nav and prepares the mobile nav to slide in */
