@@ -259,21 +259,6 @@ document.addEventListener("DOMContentLoaded", () => {
         displaySoldVehicles(soldVehicles);
     }
 
-    // --- Footer Facebook Link Fix ---
-    // This forcefully handles the click on the Facebook icon to prevent other scripts from blocking it on mobile.
-    const facebookLink = document.querySelector('.footer-socials a[href*="facebook.com"]');
-    if (facebookLink) {
-        facebookLink.addEventListener('click', function(event) {
-            // Prevent the browser's default link behavior to avoid any conflicts.
-            event.preventDefault();
-
-            // Get the URL from the link's href attribute.
-            const url = this.getAttribute('href');
-
-           // Navigate the current tab to the new URL. This is a more direct and reliable method.
-           window.location.href = url;
-        });
-    }
 });
 
 
