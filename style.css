@@ -378,25 +378,7 @@ main {
     font-weight: bold;
 }
 
-.footer-socials a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    color: var(--white);
-    font-size: 1.2rem;
-    margin-right: 0.5rem;
-    transition: all 0.05s ease;
-}
 
-.footer-socials a:hover {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    border: 2px solid var(--white);
-    border-radius: 50%;
-}
 
 .footer-copyright {
     text-align: center;
@@ -405,10 +387,44 @@ main {
     font-size: 0.9rem;
 }
 
-/* This makes the icon itself un-clickable, so the tap always registers on the parent <a> link */
-.footer-socials a i {
-    pointer-events: none;
+/* ==================================
+   NEW ROBUST FOOTER ICON STYLES
+================================== */
+.social-icon-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    background-color: transparent;
+    border: 2px solid transparent; /* Start with a transparent border for smooth transition */
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
+
+/* This creates the icon itself inside the link */
+.footer-socials a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Style the icon itself */
+.footer-socials a i {
+    font-size: 20px;
+    color: white;
+    /* This is the critical fix for the mobile tap bug */
+    pointer-events: none; 
+}
+
+/* A simple hover effect for desktop */
+.footer-socials a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
 
 /* Lightbox Styles */
 
@@ -863,6 +879,8 @@ main {
 }
 
 
+
+
 /* ====== Responsive Styles ====== */
 
 /* These @media queries apply styles only when the screen size meets certain conditions */
@@ -886,6 +904,13 @@ main {
     
     .vehicle-listing__details .vehicle-description {
         font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+    .vehicle-specs {
+        font-size: 0.8rem; /* Slightly smaller font size for specs */
+        flex-wrap: nowrap; /* Prevents the items from wrapping to a new line */
     }
 }
 
@@ -951,15 +976,6 @@ main {
     .footer-column h4 { font-size: 1.1rem; }
     .footer-column a, .footer-copyright p { font-size: 0.9rem; }
 
-    /* This disables the hover animation on mobile to prevent the link bug */
-    .footer-socials a:hover {
-    background-color: transparent;
-    border: none;
-    transform: none;
-    opacity: 1;
-}
-
-
     #menu-icon { display: block; } /* Show the hamburger menu icon */
 
       /* Hides the desktop nav and prepares the mobile nav to slide in */
@@ -1001,6 +1017,13 @@ main {
         padding: 4px 0;
         top: 15px;
         left: -35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .vehicle-specs {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Creates two equal columns */
     }
 }
 

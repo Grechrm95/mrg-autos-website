@@ -8,6 +8,7 @@ const vehicleDatabase = [
         mileage: 69000,
         fuelType: 'Petrol',
         transmission: 'Manual',
+        engineSize: '1.2L',
         status: 'available',
         images: [
             'cars/peugeot2008/main.jpg',
@@ -29,7 +30,7 @@ const vehicleDatabase = [
             'cars/peugeot2008/rearseats.webp',
             'cars/peugeot2008/rearseats2.webp',
         ],
-        description: `Peugeot 2008 1.2 Puretech in good condition. The car comes with 2 Keys, Full Service History and MOT until July 2026. The car has recently had some work done to it aswell which includes a New Timing Belt, Fresh Service and New Spark Plugs. I've got the invoices of all the work that's been carried out. 
+        description: `Peugeot 2008 Puretech in good condition. The car comes with 2 Keys, Full Service History and MOT until July 2026. The car has recently had some work done to it aswell which includes a New Timing Belt, Fresh Service and New Spark Plugs. I've got the invoices of all the work that's been carried out. 
 The car comes with some nice features which includes Central Locking, Electric Mirrors, Electric Windows, Air Conditioning, AM/FM radio with Bluetooth Connectivity, Multi-Functioning Steering Wheel, Cruise Control and Rear Parking Sensors
 The car does have a few age related marks but overall its in good condition.`
     },   
@@ -41,6 +42,7 @@ The car does have a few age related marks but overall its in good condition.`
         mileage: 57000,
         fuelType: 'Diesel',
         transmission: 'Manual',
+        engineSize: '1.6L',
         status: 'available',
         images: [
             'cars/nissanxtrail/main.webp',
@@ -68,7 +70,7 @@ The car does have a few age related marks but overall its in good condition.`
             'cars/nissanxtrail/wheel3.webp',
             'cars/nissanxtrail/wheel4.webp'
         ],
-        description: `Stunning Nissan X-Trail 2016 Acenta 1.6 Diesel in very good condition. The car comes with Full Service History, MOT until June 2026 and 2 Keys. It's just had a fresh service. The car drives perfectly with no unwanted noises. It comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, AM/FM Stereo with Bluetooth Connectivity, Duel Climate Control, Air Conditioning, Multi-Functioning Steering Wheel, Cruise Control, Sunroof, Front and Rear Parking Sensors.`
+        description: `Stunning Nissan X-Trail 2016 Acenta in very good condition. The car comes with Full Service History, MOT until June 2026 and 2 Keys. It's just had a fresh service. The car drives perfectly with no unwanted noises. It comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, AM/FM Stereo with Bluetooth Connectivity, Duel Climate Control, Air Conditioning, Multi-Functioning Steering Wheel, Cruise Control, Sunroof, Front and Rear Parking Sensors.`
     },
     {
         id: 'ford-fiesta-2014',
@@ -78,6 +80,7 @@ The car does have a few age related marks but overall its in good condition.`
         mileage: 78000,
         fuelType: 'Petrol',
         transmission: 'Manual',
+        engineSize: '1.25L',
         status: 'available',
         images: [
             'cars/fordfiesta/main2.jpg',
@@ -97,7 +100,7 @@ The car does have a few age related marks but overall its in good condition.`
             'cars/fordfiesta/radio.webp',
             'cars/fordfiesta/dash.jpg',
         ],
-        description: 'Stunning 2014 Ford Fiesta Zetec 1.25 Petrol in good condition. The car comes with MOT until July 2026 and Service History. It`s had quite a lot of machinacal work to it recently which includes a Fresh Service, New Timing Belt with Waterpump and also a New Clutch. I have the invoices of all the work that`s been carried out on the car. It comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, AM/FM Stereo with Bluetooth Connectivity, Multi-Funtioning Steering Wheel, Climate Control and Air Conditioning. The car drives perfectly which is what you expect from a Fiesta.'
+        description: 'Stunning 2014 Ford Fiesta Zetec in good condition. The car comes with MOT until July 2026 and Service History. It`s had quite a lot of machinacal work to it recently which includes a Fresh Service, New Timing Belt with Waterpump and also a New Clutch. I have the invoices of all the work that`s been carried out on the car. It comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, AM/FM Stereo with Bluetooth Connectivity, Multi-Funtioning Steering Wheel, Climate Control and Air Conditioning. The car drives perfectly which is what you expect from a Fiesta.'
     },
 
     {
@@ -108,6 +111,7 @@ The car does have a few age related marks but overall its in good condition.`
         mileage: 84000,
         fuelType: 'Diesel',
         transmission: 'Manual',
+        engineSize: '2.0L',
         status: 'available',
         images: [
             'cars/fordtransit/main.webp',
@@ -126,7 +130,7 @@ The car does have a few age related marks but overall its in good condition.`
             'cars/fordtransit/open seats.webp',
             'cars/fordtransit/dash.webp'
         ],
-        description: `Ford Transit Custom 2016 Euro 6 2.0 Diesel in good condition. It's only done 84000 miles, comes with MOT until May 2026 and 3 keys. It's recently had some work done which includes a Fresh Service, New Wet Belt, New Battery and Front Brake Pads and Disc, I have the invoice for the work that's been carried out. The car drives perfectly with no issues at all. It comes with some nice features aswell which include Central locking, Electric Windows, Electric Mirrors, Air Conditioning, Front and Rear Parking Sensors and AM/FM Stereo with Bluetooth.`
+        description: `Ford Transit Custom 2016 Euro 6 in good condition. It's only done 84000 miles, comes with MOT until May 2026 and 3 keys. It's recently had some work done which includes a Fresh Service, New Wet Belt, New Battery and Front Brake Pads and Disc, I have the invoice for the work that's been carried out. The car drives perfectly with no issues at all. It comes with some nice features aswell which include Central locking, Electric Windows, Electric Mirrors, Air Conditioning, Front and Rear Parking Sensors and AM/FM Stereo with Bluetooth.`
     },
     {
         id: 'citroen-c3-2018',
@@ -136,6 +140,7 @@ The car does have a few age related marks but overall its in good condition.`
         mileage: 72000,
         fuelType: 'Petrol',
         transmission: 'Manual',
+        engineSize: '1.2L',
         status: 'available',
         images: [
             'cars/citroen/main.webp',
@@ -159,7 +164,7 @@ The car does have a few age related marks but overall its in good condition.`
             'cars/citroen/windowbuttons.webp',
             'cars/citroen/buttons.webp'
         ],
-        description: `Stunning Citroen C3 Aircross 1.2 PureTech in good condition. The car comes with MOT until April 2026, Service History and 2 Keys. Its had the Timing Belt done 1000 miles ago with the invoice to go with. Ive also had a new battery fitted and New Brakes and Discs on the Rear. The car comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, Air Conditioning, Cruise Control, Multi-Functioning Steering Wheel, Lane Assist, Hill Assist and AM/FM Stereo with Bluetooth and Apple Carplay/ Android Auto.`
+        description: `Stunning Citroen C3 Aircross PureTech in good condition. The car comes with MOT until April 2026, Service History and 2 Keys. Its had the Timing Belt done 1000 miles ago with the invoice to go with. Ive also had a new battery fitted and New Brakes and Discs on the Rear. The car comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, Air Conditioning, Cruise Control, Multi-Functioning Steering Wheel, Lane Assist, Hill Assist and AM/FM Stereo with Bluetooth and Apple Carplay/ Android Auto.`
     }, 
 
     // Sold Vehicles section

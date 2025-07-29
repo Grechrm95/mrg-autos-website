@@ -70,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                         <li><i class='bx bxs-car'></i> ${car.mileage.toLocaleString()} miles</li>
                                         <li><i class='bx bxs-gas-pump'></i> ${car.fuelType}</li>
                                         <li><i class='bx bx-sitemap'></i> ${car.transmission}</li>
+                                        <li><i class='bx bxs-cog'></i> ${car.engineSize}</li>
                                     </ul>
                                     <p class="vehicle-description">${car.description}</p>
                                     <a href="contact.html" class="btn-enquire">Enquire About This Vehicle</a>
@@ -258,7 +259,4 @@ document.addEventListener("DOMContentLoaded", () => {
         const soldVehicles = vehicleDatabase.filter(car => car.status === 'sold');
         displaySoldVehicles(soldVehicles);
     }
-
 });
-
-
