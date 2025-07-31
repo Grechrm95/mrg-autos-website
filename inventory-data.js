@@ -72,37 +72,7 @@ The car does have a few age related marks but overall its in good condition.`
         ],
         description: `Stunning Nissan X-Trail 2016 Acenta in very good condition. The car comes with Full Service History, MOT until June 2026 and 2 Keys. It's just had a fresh service. The car drives perfectly with no unwanted noises. It comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, AM/FM Stereo with Bluetooth Connectivity, Duel Climate Control, Air Conditioning, Multi-Functioning Steering Wheel, Cruise Control, Sunroof, Front and Rear Parking Sensors.`
     },
-    {
-        id: 'ford-fiesta-2014',
-        title: 'Ford Fiesta Zetec',
-        year: 2014,
-        price: '£4000',
-        mileage: 78000,
-        fuelType: 'Petrol',
-        transmission: 'Manual',
-        engineSize: '1.25L',
-        status: 'available',
-        images: [
-            'cars/fordfiesta/main2.jpg',
-            'cars/fordfiesta/main.webp',
-            'cars/fordfiesta/frontside.jpg',
-            'cars/fordfiesta/forntside2.jpg',
-            'cars/fordfiesta/front.jpg',
-            'cars/fordfiesta/backside.webp',
-            'cars/fordfiesta/backside2.webp',
-            'cars/fordfiesta/backside3.webp',
-            'cars/fordfiesta/back.webp',
-            'cars/fordfiesta/boot.webp',
-            'cars/fordfiesta/driverseat.jpg',
-            'cars/fordfiesta/backseats.webp',
-            'cars/fordfiesta/steeringwheel.jpg',
-            'cars/fordfiesta/radio2.webp',
-            'cars/fordfiesta/radio.webp',
-            'cars/fordfiesta/dash.jpg',
-        ],
-        description: 'Stunning 2014 Ford Fiesta Zetec in good condition. The car comes with MOT until July 2026 and Service History. It`s had quite a lot of machinacal work to it recently which includes a Fresh Service, New Timing Belt with Waterpump and also a New Clutch. I have the invoices of all the work that`s been carried out on the car. It comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, AM/FM Stereo with Bluetooth Connectivity, Multi-Funtioning Steering Wheel, Climate Control and Air Conditioning. The car drives perfectly which is what you expect from a Fiesta.'
-    },
-
+ 
     {
         id: 'ford-transit-custom-2016',
         title: 'Ford Transit Custom Euro 6 ',
@@ -132,6 +102,7 @@ The car does have a few age related marks but overall its in good condition.`
         ],
         description: `Ford Transit Custom 2016 Euro 6 in good condition. It's only done 84000 miles, comes with MOT until May 2026 and 3 keys. It's recently had some work done which includes a Fresh Service, New Wet Belt, New Battery and Front Brake Pads and Disc, I have the invoice for the work that's been carried out. The car drives perfectly with no issues at all. It comes with some nice features aswell which include Central locking, Electric Windows, Electric Mirrors, Air Conditioning, Front and Rear Parking Sensors and AM/FM Stereo with Bluetooth.`
     },
+    
     {
         id: 'citroen-c3-2018',
         title: 'Citroen C3 Aircross PureTech',
@@ -168,6 +139,13 @@ The car does have a few age related marks but overall its in good condition.`
     }, 
 
     // Sold Vehicles section
+     {
+        id: 'ford-fiesta-2014',
+        title: 'Ford Fiesta Zetec',
+        year: 2014,
+        status: 'sold',
+        images: [ 'cars/soldcars/fiestablue.webp' ],
+    },
     {
         id: 'peugeot-2008-2017',
         title: 'Peugeot 2008 Allure',
