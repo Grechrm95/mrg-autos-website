@@ -1,10 +1,45 @@
 //car listing data for a vehicle inventory system
 const vehicleDatabase = [
-       {
+        {
+        id: 'Seat-Ibiza-2016',
+        title: 'Seat Ibiza Vista Sport',
+        year: 2016,
+        price: '£5500',
+        mileage: 60500,
+        fuelType: 'Petrol',
+        transmission: 'Manual',
+        engineSize: '1.0L',
+        status: 'available',
+        images: [
+            'cars/seatibiza/Main.webp',
+            'cars/seatibiza/main2.webp',
+            'cars/seatibiza/left.webp',
+            'cars/seatibiza/left2.webp',
+            'cars/seatibiza/front.webp',
+            'cars/seatibiza/backright.webp',
+            'cars/seatibiza/backright2.webp',
+            'cars/seatibiza/back.webp',
+            'cars/seatibiza/boot.webp',
+            'cars/seatibiza/backleft.webp',
+            'cars/seatibiza/backleft2.webp',
+            'cars/seatibiza/dash.webp',
+            'cars/seatibiza/dials.webp',
+            'cars/seatibiza/steering.webp',
+            'cars/seatibiza/dash2.webp',
+            'cars/seatibiza/frontinside.webp',
+            'cars/seatibiza/frontseats.webp',
+            'cars/seatibiza/knob.webp',
+            'cars/seatibiza/backseats.webp',
+        ],
+        description: `Seat Ibiza Vista Sport, comes with MOT until July 2026, 2 Keys and Full Service History. The car has recently had some work done to it which includes a Fresh Service and New Disc and Pads on the Front. The car drives perfectly with no unwanted noises or issues. It comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, Air Conditioning, AM/FM Stereo with Bluetooth Connectivity, Handsfree, Multi-Funtioning Steering Wheel, Automatic Headlights and Rear Parking Sensors.
+                       The car does have a few age related marks but overall its in good condition.`
+    }, 
+    
+    {
         id: 'Peugeot-2008-2017 ',
         title: 'Peugeot 2008 Active',
         year: 2017,
-        price: '£5200',
+        price: '£5000',
         mileage: 69000,
         fuelType: 'Petrol',
         transmission: 'Manual',
@@ -31,8 +66,7 @@ const vehicleDatabase = [
             'cars/peugeot2008/rearseats2.webp',
         ],
         description: `Peugeot 2008 Puretech in good condition. The car comes with 2 Keys, Full Service History and MOT until July 2026. The car has recently had some work done to it aswell which includes a New Timing Belt, Fresh Service and New Spark Plugs. I've got the invoices of all the work that's been carried out. 
-The car comes with some nice features which includes Central Locking, Electric Mirrors, Electric Windows, Air Conditioning, AM/FM radio with Bluetooth Connectivity, Multi-Functioning Steering Wheel, Cruise Control and Rear Parking Sensors
-The car does have a few age related marks but overall its in good condition.`
+                      The car comes with some nice features which includes Central Locking, Electric Mirrors, Electric Windows, Air Conditioning, AM/FM radio with Bluetooth Connectivity, Multi-Functioning Steering Wheel, Cruise Control and Rear Parking Sensors.`
     },   
     {
         id: 'nissan-xtrail-2016',
@@ -225,4 +259,4 @@ The car does have a few age related marks but overall its in good condition.`
     },
 ];
 
-const featuredVehicleIds = ['nissan-xtrail-2016', 'ford-transit-custom-2016', 'citroen-c3-2018'];
+const featuredVehicleIds = ['nissan-xtrail-2016', 'ford-transit-custom-2016', 'Seat-Ibiza-2016'];
