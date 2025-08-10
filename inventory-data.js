@@ -34,40 +34,6 @@ const vehicleDatabase = [
         description: `Seat Ibiza Vista Sport, comes with MOT until July 2026, 2 Keys and Full Service History. The car has recently had some work done to it which includes a Fresh Service and New Disc and Pads on the Front. The car drives perfectly with no unwanted noises or issues. It comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, Air Conditioning, AM/FM Stereo with Bluetooth Connectivity, Handsfree, Multi-Funtioning Steering Wheel, Automatic Headlights and Rear Parking Sensors.
                        The car does have a few age related marks but overall its in good condition.`
     }, 
-    
-    {
-        id: 'Peugeot-2008-2017 ',
-        title: 'Peugeot 2008 Active',
-        year: 2017,
-        price: '£5000',
-        mileage: 69000,
-        fuelType: 'Petrol',
-        transmission: 'Manual',
-        engineSize: '1.2L',
-        status: 'available',
-        images: [
-            'cars/peugeot2008/main.jpg',
-            'cars/peugeot2008/main2.jpg',
-            'cars/peugeot2008/frontpassenger1.jpg',
-            'cars/peugeot2008/frontpassenger2.jpg',
-            'cars/peugeot2008/front.jpg',
-            'cars/peugeot2008/reardriver1.jpg',
-            'cars/peugeot2008/reardriver2.jpg',
-            'cars/peugeot2008/rearpassenger.jpg',
-            'cars/peugeot2008/rearpassenger2.jpg',
-            'cars/peugeot2008/rearboot.webp',
-            'cars/peugeot2008/bootopen.webp',
-            'cars/peugeot2008/dashboardmain.jpg',
-            'cars/peugeot2008/steeringwheeldash.jpg',
-            'cars/peugeot2008/steeringwheel.webp',
-            'cars/peugeot2008/driverseats.webp',
-            'cars/peugeot2008/passengerseats.webp',
-            'cars/peugeot2008/rearseats.webp',
-            'cars/peugeot2008/rearseats2.webp',
-        ],
-        description: `Peugeot 2008 Puretech in good condition. The car comes with 2 Keys, Full Service History and MOT until July 2026. The car has recently had some work done to it aswell which includes a New Timing Belt, Fresh Service and New Spark Plugs. I've got the invoices of all the work that's been carried out. 
-                      The car comes with some nice features which includes Central Locking, Electric Mirrors, Electric Windows, Air Conditioning, AM/FM radio with Bluetooth Connectivity, Multi-Functioning Steering Wheel, Cruise Control and Rear Parking Sensors.`
-    },   
     {
         id: 'nissan-xtrail-2016',
         title: 'Nissan X-Trail Acenta',
@@ -173,7 +139,14 @@ const vehicleDatabase = [
     }, 
 
     // Sold Vehicles section
-     {
+       {
+        id: 'Peugeot-2008-2017',
+        title: 'Peugeot 2008 Active',
+        year: 2017,
+        status: 'sold',
+        images: [ 'cars/soldcars/2008.jpg' ],
+    }, 
+    {
         id: 'ford-fiesta-2014',
         title: 'Ford Fiesta Zetec',
         year: 2014,
