@@ -4,7 +4,7 @@ const vehicleDatabase = [
         id: 'Seat-Ibiza-2016',
         title: 'Seat Ibiza Vista Sport',
         year: 2016,
-        price: '£5500',
+        price: 'Deposit Taken',
         mileage: 60500,
         fuelType: 'Petrol',
         transmission: 'Manual',
