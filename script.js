@@ -259,4 +259,29 @@ document.addEventListener("DOMContentLoaded", () => {
         const soldVehicles = vehicleDatabase.filter(car => car.status === 'sold');
         displaySoldVehicles(soldVehicles);
     }
+
+    // --- START: NEW FACEBOOK DEEP LINK CODE ---
+    const facebookButton = document.getElementById('facebook-link');
+
+    if (facebookButton) {
+      facebookButton.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        // IMPORTANT: Replace 'YOUR_NUMERIC_ID' with the ID you found in Step 1
+        const facebookId = '100084010458557'; 
+        const appUri = `fb://profile/${facebookId}`;
+        const fallbackUrl = 'https://www.facebook.com/mrgautos';
+        
+        const now = new Date().valueOf();
+        setTimeout(function () {
+            // If the user is still on the page after 25ms, the app link failed
+            if (new Date().valueOf() - now > 100) return;
+            window.location.href = fallbackUrl;
+        }, 25);
+        
+        // Try to open the Facebook app
+        window.location.href = appUri;
+      });
+    }
+    // --- END: NEW FACEBOOK DEEP LINK CODE ---
 });

@@ -235,4 +235,4 @@ const vehicleDatabase = [
     },
 ];
 
-const featuredVehicleIds = ['nissan-xtrail-2016', 'ford-transit-custom-2016', 'citroen-c3-2018'];
+const featuredVehicleIds = ['nissan-xtrail-2016', 'ford-tranzitConnect-2017', 'citroen-c3-2018'];
