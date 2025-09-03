@@ -27,7 +27,7 @@ const vehicleDatabase = [
             'cars/FordTranzitConnet/boot.jpg',
             'cars/FordTranzitConnet/boot 2.jpg',
         ],
-        description: `Ford Transit Connect 2017 Euro 6 1.5TDCI. The van drivers perfectly without any issues. It comes with MOT until August 2026, 2 Keys and Service History. The van has just had a fresh service with a newe Timing Belt and Water Pump aswell. I have the invoices of the work that's been carried out. It has some normal features you'd expect aswell such as Centraol Locking, Electric Windows, and AM/FM Stereo with Bluetooth connectivity. The van does have a few age related marks but overall its in good condition.`
+        description: `Ford Transit Connect 2017 Euro 6 1.5TDCI. The van drivers perfectly without any issues. It comes with MOT until August 2026, 2 Keys and Service History. The van has just had a fresh service with a new Timing Belt and Water Pump aswell. I have the invoices of the work that's been carried out. It has some normal features you'd expect aswell such as Centraol Locking, Electric Windows, and AM/FM Stereo with Bluetooth connectivity. The van does have a few age related marks but overall its in good condition.`
     },
  
     {
