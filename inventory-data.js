@@ -1,5 +1,44 @@
 //car listing data for a vehicle inventory system
 const vehicleDatabase = [
+        {
+      id: 'citroen-c4-picaso-2015',
+        title: 'Citroen Grand C4 Picasso',
+        year: 2015,
+        price: '£5400',
+        mileage: 77500,
+        fuelType: 'Diesel',
+        transmission: 'Manual',
+        engineSize: '1.6L',
+        status: 'available',
+        images: [
+            'cars/picaso/Main.jpg',
+            'cars/picaso/Main2.jpg',
+            'cars/picaso/main3.jpg',
+            'cars/picaso/main4.jpg',
+            'cars/picaso/main5.jpg',
+            'cars/picaso/back1.jpg',
+            'cars/picaso/back2.jpg',
+            'cars/picaso/back3.jpg',
+            'cars/picaso/back4.jpg',
+            'cars/picaso/back5.jpg',
+            'cars/picaso/dash2.jpg',
+            'cars/picaso/Dash.jpg',
+            'cars/picaso/radio.jpg',
+            'cars/picaso/front.jpg',
+            'cars/picaso/frontseats.jpg',
+            'cars/picaso/backseats4.jpg',
+            'cars/picaso/backseats3.jpg',
+            'cars/picaso/backseats2.jpg',
+            'cars/picaso/backseats1.jpg',
+            'cars/picaso/backseats.jpg',
+            'cars/picaso/boot.jpg',
+        ],
+        description: `Stunning Citroen C4 Grand Picasso 7 Seater. This comes with Service History, 2 keys, it has a 6 speed manual gearbox and it is very economical on fuel.
+                      Its only done 77000 miles. It's had the timing belt changed by the previous owner at 72038 miles. I have an invoice for that. I've also had some work done
+                      which includes a fresh service, new Clutch and New Flywheel as well. I also have the invoice for that work that's been carried out. The car comes with some
+                      nice features which includes Central Locking, Electric Windows, Electric Folding Mirrors, Air-Conditioning, Dual Climate Control, Automatic Wipers, Automatic 
+                      Headlights, AM/FM Stereo with Bluetooth Connectivity, Sat-Nav,  Rear Camera with Parking Sensors.`
+    },
     {
       id: 'ford-tranzitConnect-2017',
         title: 'Ford Transit Connect',
@@ -27,7 +66,7 @@ const vehicleDatabase = [
             'cars/FordTranzitConnet/boot.jpg',
             'cars/FordTranzitConnet/boot 2.jpg',
         ],
-        description: `Ford Transit Connect 2017 Euro 6 1.5TDCI. The van drivers perfectly without any issues. It comes with MOT until August 2026, 2 Keys and Service History. The van has just had a fresh service with a new Timing Belt and Water Pump aswell. I have the invoices of the work that's been carried out. It has some normal features you'd expect aswell such as Centraol Locking, Electric Windows, and AM/FM Stereo with Bluetooth connectivity. The van does have a few age related marks but overall its in good condition.`
+        description: `Ford Transit Connect 2017 Euro 6 1.5TDCI. The van drivers perfectly without any issues. It comes with MOT until August 2026, 2 Keys and Service History. The van has just had a fresh service with a new Timing Belt and Water Pump aswell. I have the invoices of the work that's been carried out. It has some normal features you'd expect aswell such as Central Locking, Electric Windows, and AM/FM Stereo with Bluetooth connectivity. The van does have a few age related marks but overall its in good condition.`
     },
  
     {

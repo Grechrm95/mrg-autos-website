@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 </div>
                                 <div class="vehicle-listing__details">
                                     <ul class="vehicle-specs">
-                                        <li><i class='bx bxs-car'></i> ${car.mileage.toLocaleString()} miles</li>
+                                        <li><i class='bx bxs-car'></i> ${car.mileage.toLocaleString()} Miles</li>
                                         <li><i class='bx bxs-gas-pump'></i> ${car.fuelType}</li>
                                         <li><i class='bx bx-sitemap'></i> ${car.transmission}</li>
                                         <li><i class='bx bxs-cog'></i> ${car.engineSize}</li>
