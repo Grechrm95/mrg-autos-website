@@ -1,0 +1,19 @@
+# Old Path          New Path                 Status
+
+# --- General Redirects ---
+/cars               /inventory.html          301
+/about              /about.html              301
+/contact            /contact.html            301
+
+# --- Specific Redirects from Google's Index ---
+/audi-a1-sport-2013         /inventory.html       301
+/blank-1                    /inventory.html       301
+/car-for-sale               /inventory.html       301
+/citroen-c3-aircross        /inventory.html       301
+/copy-of-citroen-c3-aircross /inventory.html      301
+/ford-fiesta-2014           /inventory.html       301
+/ford-fiesta-2017-automatic /inventory.html       301
+/ford-transit-connect-2019  /inventory.html       301
+/nissan-xtrail-2016         /inventory.html       301
+/peugeot-2008               /inventory.html       301
+/vauxhall-vivaro-2020       /inventory.html       301
