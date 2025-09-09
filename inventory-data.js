@@ -103,7 +103,7 @@ const vehicleDatabase = [
         id: 'citroen-c3-2018',
         title: 'Citroen C3 Aircross PureTech',
         year: 2018,
-        price: '£5750',
+        price: '£5500',
         mileage: 72000,
         fuelType: 'Petrol',
         transmission: 'Manual',
