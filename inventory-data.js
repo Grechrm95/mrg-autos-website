@@ -1,36 +1,6 @@
 //car listing data for a vehicle inventory system
 const vehicleDatabase = [
-    {
-      id: 'ford-tranzitConnect-2017',
-        title: 'Ford Transit Connect',
-        year: 2017,
-        price: '£5400',
-        mileage: 99000,
-        fuelType: 'Diesel',
-        transmission: 'Manual',
-        engineSize: '1.5L',
-        status: 'available',
-        images: [
-            'cars/FordTranzitConnet/front right main.jpg',
-            'cars/FordTranzitConnet/Front right 2.jpg',
-            'cars/FordTranzitConnet/front.jpg',
-            'cars/FordTranzitConnet/front left.jpg',
-            'cars/FordTranzitConnet/front left 2.jpg',
-            'cars/FordTranzitConnet/back left.jpg',
-            'cars/FordTranzitConnet/back left 2.jpg',
-            'cars/FordTranzitConnet/back right.jpg',
-            'cars/FordTranzitConnet/back right 2.jpg',
-            'cars/FordTranzitConnet/inside 1.jpg',
-            'cars/FordTranzitConnet/insid 2.jpg',
-            'cars/FordTranzitConnet/inside 3.jpg',
-            'cars/FordTranzitConnet/windows.jpg',
-            'cars/FordTranzitConnet/boot.jpg',
-            'cars/FordTranzitConnet/boot 2.jpg',
-        ],
-        description: `Ford Transit Connect 2017 Euro 6 1.5TDCI. The van drivers perfectly without any issues. It comes with MOT until August 2026, 2 Keys and Service History. The van has just had a fresh service with a new Timing Belt and Water Pump aswell. I have the invoices of the work that's been carried out. It has some normal features you'd expect aswell such as Central Locking, Electric Windows, and AM/FM Stereo with Bluetooth connectivity. The van does have a few age related marks but overall its in good condition.`
-    },
- 
-    {
+     {
         id: 'nissan-xtrail-2016',
         title: 'Nissan X-Trail Acenta',
         year: 2016,
@@ -135,6 +105,13 @@ const vehicleDatabase = [
     }, 
 
     // Sold Vehicles section
+    {
+     id: 'ford-tranzitConnect-2017',
+        title: 'Ford Transit Connect',
+        year: 2017,
+        status: 'sold',
+         images: [ 'cars/soldcars/fordTanzitWhite.jpg' ],
+    },
         {
     id: 'citroen-c4-picaso-2015',
         title: 'Citroen Grand C4 Picasso',
@@ -243,4 +220,4 @@ const vehicleDatabase = [
     },
 ];
 
-const featuredVehicleIds = ['nissan-xtrail-2016', 'ford-tranzitConnect-2017', 'citroen-c3-2018'];
+const featuredVehicleIds = ['nissan-xtrail-2016', 'ford-transit-custom-2016', 'citroen-c3-2018'];
