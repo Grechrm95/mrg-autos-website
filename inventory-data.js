@@ -1,5 +1,74 @@
 //car listing data for a vehicle inventory system
 const vehicleDatabase = [
+             {
+        id: 'nissan-qashqai-2016',
+        title: 'Nissan Qashqai DIG-T N-Connecta Euro 6',
+        year: 2016,
+        price: '£6695',
+        mileage: 69720,
+        fuelType: 'Petrol',
+        transmission: 'Manual',
+        engineSize: '1.2L',
+        status: 'available',
+        images: [
+            'cars/nissanqas/main.jpg',
+            'cars/nissanqas/main2.jpg',
+            'cars/nissanqas/main3.jpg',
+            'cars/nissanqas/main4.jpg',
+            'cars/nissanqas/front.jpg',
+            'cars/nissanqas/back.jpg',
+            'cars/nissanqas/back2.jpg',
+            'cars/nissanqas/back3.jpg',
+            'cars/nissanqas/back4.jpg',
+            'cars/nissanqas/back1.jpg',
+            'cars/nissanqas/boot.jpg',
+            'cars/nissanqas/dash.jpg',
+            'cars/nissanqas/dash1.jpg',
+            'cars/nissanqas/dash3.jpg',
+            'cars/nissanqas/dash4.jpg',
+            'cars/nissanqas/frontseats.jpg',
+            'cars/nissanqas/frontseats2.jpg',
+            'cars/nissanqas/backseats.jpg',
+            'cars/nissanqas/backseats1.jpg',
+            'cars/nissanqas/backseats2.jpg',
+
+        ],
+        description: `Beautiful Nissan Qashqai 2016 N-Connecta in good condition. The car comes with MOT until August 2026 and service history. It recently had some work done to it which includes a New Timing Chain, Fresh Service, New Front Brake Disc and Pads as well. It's running Michelin tyres all round as well. The car drives perfectly as it should and it comes with some nice features as well which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, Keyless Entry/ Start, AM/FM Stereo with Bluetooth Connectivity, Sat-Nav, Multi-Functioning Steering Wheel, Cruise Control, Air Conditioning, Hill Assist, Front and Rear Parking Sensors with 360 degrees Camera.`
+    },
+         {
+        id: 'ford-kuga-2014',
+        title: 'Ford Kuga Titanium AWD Euro 5',
+        year: 2014,
+        price: '£7000',
+        mileage: 55402,
+        fuelType: 'Diesel',
+        transmission: 'Manual',
+        engineSize: '2.0L',
+        status: 'available',
+        images: [
+            'cars/fordkuga/Main.jpg',
+            'cars/fordkuga/Main2.jpg',
+            'cars/fordkuga/Main3.jpg',
+            'cars/fordkuga/Main4.jpg',
+            'cars/fordkuga/back.jpg',
+            'cars/fordkuga/back2.jpg',
+            'cars/fordkuga/back3.jpg',
+            'cars/fordkuga/back4.jpg',
+            'cars/fordkuga/boot.jpg',
+            'cars/fordkuga/boot2.jpg',
+            'cars/fordkuga/dash.jpg',
+            'cars/fordkuga/dash2.jpg',
+            'cars/fordkuga/dash3.jpg',
+            'cars/fordkuga/parkpilot.jpg',
+            'cars/fordkuga/frontseats.jpg', 
+            'cars/fordkuga/frontseats2.jpg',
+            'cars/fordkuga/backseats.jpg',
+            'cars/fordkuga/backseats2.jpg',
+            'cars/fordkuga/backseats3.jpg',
+
+        ],
+        description: `This is 4WD Ford Kuga Titanium 6 Speed Manual, comes with 2 Keys, Full-Service History and MOT until September 2026. It's recently had a service with Fuel Filter and Pollen Filter as well. I've got the invoices of the work that has been carried out. The car drives absolutely perfect and it comes with some nice features as well which include Keyless Entry, Keyless Start, Electric Mirrors, Automatic Headlights, Dual Climate Control, Cruise Control, Air Conditioning, Multi-Function Steering Wheel, Hands Free, Sony Stereo with Bluetooth Connectivity, Electric Tailgate, Front and Rear Parking Sensors. The car does have a few age-related marks and dents but nothing major.`
+    },
      {
         id: 'nissan-xtrail-2016',
         title: 'Nissan X-Trail Acenta',
@@ -220,4 +289,4 @@ const vehicleDatabase = [
     },
 ];
 
-const featuredVehicleIds = ['nissan-xtrail-2016', 'ford-transit-custom-2016', 'citroen-c3-2018'];
+const featuredVehicleIds = ['ford-kuga-2014','nissan-xtrail-2016', 'citroen-c3-2018'];
