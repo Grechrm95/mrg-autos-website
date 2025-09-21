@@ -1,40 +1,5 @@
 //car listing data for a vehicle inventory system
 const vehicleDatabase = [
-             {
-        id: 'nissan-qashqai-2016',
-        title: 'Nissan Qashqai DIG-T N-Connecta Euro 6',
-        year: 2016,
-        price: '£6695',
-        mileage: 69720,
-        fuelType: 'Petrol',
-        transmission: 'Manual',
-        engineSize: '1.2L',
-        status: 'available',
-        images: [
-            'cars/nissanqas/main.jpg',
-            'cars/nissanqas/main2.jpg',
-            'cars/nissanqas/main3.jpg',
-            'cars/nissanqas/main4.jpg',
-            'cars/nissanqas/front.jpg',
-            'cars/nissanqas/back.jpg',
-            'cars/nissanqas/back2.jpg',
-            'cars/nissanqas/back3.jpg',
-            'cars/nissanqas/back4.jpg',
-            'cars/nissanqas/back1.jpg',
-            'cars/nissanqas/boot.jpg',
-            'cars/nissanqas/dash.jpg',
-            'cars/nissanqas/dash1.jpg',
-            'cars/nissanqas/dash3.jpg',
-            'cars/nissanqas/dash4.jpg',
-            'cars/nissanqas/frontseats.jpg',
-            'cars/nissanqas/frontseats2.jpg',
-            'cars/nissanqas/backseats.jpg',
-            'cars/nissanqas/backseats1.jpg',
-            'cars/nissanqas/backseats2.jpg',
-
-        ],
-        description: `Beautiful Nissan Qashqai 2016 N-Connecta in good condition. The car comes with MOT until August 2026 and service history. It recently had some work done to it which includes a New Timing Chain, Fresh Service, New Front Brake Disc and Pads as well. It's running Michelin tyres all round as well. The car drives perfectly as it should and it comes with some nice features as well which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, Keyless Entry/ Start, AM/FM Stereo with Bluetooth Connectivity, Sat-Nav, Multi-Functioning Steering Wheel, Cruise Control, Air Conditioning, Hill Assist, Front and Rear Parking Sensors with 360 degrees Camera.`
-    },
          {
         id: 'ford-kuga-2014',
         title: 'Ford Kuga Titanium AWD Euro 5',
@@ -174,6 +139,13 @@ const vehicleDatabase = [
     }, 
 
     // Sold Vehicles section
+    {
+    id: 'nissan-qashqai-2016',
+        title: 'Nissan Qashqai DIG-T N-Connecta Euro 6',
+        year: 2016,
+        status: 'sold',
+        images: [ 'cars/soldcars/nissanqasgrey.jpg' ],
+    },
     {
      id: 'ford-tranzitConnect-2017',
         title: 'Ford Transit Connect',
