@@ -4,7 +4,7 @@ const vehicleDatabase = [
         id: 'ford-kuga-2014',
         title: 'Ford Kuga Titanium AWD Euro 5',
         year: 2014,
-        price: '£7000',
+        price: '£6500',
         mileage: 55402,
         fuelType: 'Diesel',
         transmission: 'Manual',
