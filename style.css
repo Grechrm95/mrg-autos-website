@@ -902,6 +902,10 @@ main {
         font-size: 0.8rem; /* Slightly smaller font size for specs */
         flex-wrap: nowrap; /* Prevents the items from wrapping to a new line */
     }
+
+    .vehicle-description{
+        padding-bottom: 1rem;
+    }
 }
 
 @media (max-width: 900px) {
@@ -916,6 +920,7 @@ main {
         grid-column: auto;
         grid-row: auto;
     }
+
 }
 
 /* For smaller tablets and large phones */
@@ -935,6 +940,10 @@ main {
     
     .vehicle-listing__content {
         gap: 1.5rem;
+    }
+
+    .vehicle-description{
+        padding-bottom: 2rem;
     }
 
     .hero-section {
@@ -1014,6 +1023,10 @@ main {
     .vehicle-specs {
         display: grid;
         grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+    }
+
+    .vehicle-description{
+        padding-bottom: 0.5rem;
     }
 }
 

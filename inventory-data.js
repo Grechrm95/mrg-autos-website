@@ -32,7 +32,7 @@ const vehicleDatabase = [
             'cars/fordkuga/backseats3.jpg',
 
         ],
-        description: `This is 4WD Ford Kuga Titanium 6 Speed Manual, comes with 2 Keys, Full-Service History and MOT until September 2026. It's recently had a service with Fuel Filter and Pollen Filter as well. I've got the invoices of the work that has been carried out. The car drives absolutely perfect and it comes with some nice features as well which include Keyless Entry, Keyless Start, Electric Mirrors, Automatic Headlights, Dual Climate Control, Cruise Control, Air Conditioning, Multi-Function Steering Wheel, Hands Free, Sony Stereo with Bluetooth Connectivity, Electric Tailgate, Front and Rear Parking Sensors. The car does have a few age-related marks and dents but nothing major.`
+        description: `This is 4WD Ford Kuga Titanium 6 Speed Manual, comes with 2 Keys, Full-Service History and MOT until September 2026. Recently it had a service and a New Timing Belt fitted. Moreover, a new Fuel Filter and Pollen Filter have been fitted as well. as well. I've got the invoices of the work that has been carried out. The car drives absolutely perfect and it comes with some nice features as well which include Keyless Entry, Keyless Start, Electric Mirrors, Automatic Headlights, Dual Climate Control, Cruise Control, Air Conditioning, Multi-Function Steering Wheel, Hands Free, Sony Stereo with Bluetooth Connectivity, Electric Tailgate, Front and Rear Parking Sensors. The car does have a few age-related marks and dents but nothing major.`
     },
      {
         id: 'nissan-xtrail-2016',
