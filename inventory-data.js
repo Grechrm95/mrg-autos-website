@@ -102,41 +102,6 @@ const vehicleDatabase = [
         ],
         description: `Ford Transit Custom 2016 Euro 6 in good condition. It's only done 84000 miles, comes with MOT until May 2026 and 3 keys. It's recently had some work done which includes a Fresh Service, New Wet Belt, New Battery and Front Brake Pads and Disc, I have the invoice for the work that's been carried out. The car drives perfectly with no issues at all. It comes with some nice features aswell which include Central locking, Electric Windows, Electric Mirrors, Air Conditioning, Front and Rear Parking Sensors and AM/FM Stereo with Bluetooth.`
     },
-    
-    {
-        id: 'citroen-c3-2018',
-        title: 'Citroen C3 Aircross PureTech',
-        year: 2018,
-        price: '£5500',
-        mileage: 72000,
-        fuelType: 'Petrol',
-        transmission: 'Manual',
-        engineSize: '1.2L',
-        status: 'available',
-        images: [
-            'cars/citroen/main.webp',
-            'cars/citroen/main2.webp',
-            'cars/citroen/wideside.webp',
-            'cars/citroen/frontside.webp',
-            'cars/citroen/frontside2.webp',
-            'cars/citroen/backsideleft.webp',
-            'cars/citroen/backsideleft2.webp',
-            'cars/citroen/backsideright.webp',
-            'cars/citroen/backsideright1.webp',
-            'cars/citroen/backsideright2.webp',
-            'cars/citroen/back.webp',
-            'cars/citroen/openboot.webp',
-            'cars/citroen/front seats.webp',
-            'cars/citroen/insidefront.webp',
-            'cars/citroen/dash.webp',
-            'cars/citroen/dials.webp',
-            'cars/citroen/backseats.webp',
-            'cars/citroen/backseats.webp',
-            'cars/citroen/windowbuttons.webp',
-            'cars/citroen/buttons.webp'
-        ],
-        description: `Stunning Citroen C3 Aircross PureTech in good condition. The car comes with MOT until April 2026, Service History and 2 Keys. Its had the Timing Belt done 1000 miles ago with the invoice to go with. Ive also had a new battery fitted and New Brakes and Discs on the Rear. The car comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, Air Conditioning, Cruise Control, Multi-Functioning Steering Wheel, Lane Assist, Hill Assist and AM/FM Stereo with Bluetooth and Apple Carplay/ Android Auto.`
-    }, 
 
     // Sold Vehicles section
     {
@@ -261,4 +226,4 @@ const vehicleDatabase = [
     },
 ];
 
-const featuredVehicleIds = ['ford-kuga-2014','nissan-xtrail-2016', 'citroen-c3-2018'];
+const featuredVehicleIds = ['ford-kuga-2014','nissan-xtrail-2016', 'ford-transit-custom-2016'];
