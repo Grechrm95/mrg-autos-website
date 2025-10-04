@@ -1,39 +1,5 @@
 //car listing data for a vehicle inventory system
 const vehicleDatabase = [
-         {
-        id: 'ford-kuga-2014',
-        title: 'Ford Kuga Titanium AWD Euro 5',
-        year: 2014,
-        price: '£6500',
-        mileage: 55402,
-        fuelType: 'Diesel',
-        transmission: 'Manual',
-        engineSize: '2.0L',
-        status: 'available',
-        images: [
-            'cars/fordkuga/Main.jpg',
-            'cars/fordkuga/Main2.jpg',
-            'cars/fordkuga/Main3.jpg',
-            'cars/fordkuga/Main4.jpg',
-            'cars/fordkuga/back.jpg',
-            'cars/fordkuga/back2.jpg',
-            'cars/fordkuga/back3.jpg',
-            'cars/fordkuga/back4.jpg',
-            'cars/fordkuga/boot.jpg',
-            'cars/fordkuga/boot2.jpg',
-            'cars/fordkuga/dash.jpg',
-            'cars/fordkuga/dash2.jpg',
-            'cars/fordkuga/dash3.jpg',
-            'cars/fordkuga/parkpilot.jpg',
-            'cars/fordkuga/frontseats.jpg', 
-            'cars/fordkuga/frontseats2.jpg',
-            'cars/fordkuga/backseats.jpg',
-            'cars/fordkuga/backseats2.jpg',
-            'cars/fordkuga/backseats3.jpg',
-
-        ],
-        description: `This is 4WD Ford Kuga Titanium 6 Speed Manual, comes with 2 Keys, Full-Service History and MOT until September 2026. Recently it had a service and a New Timing Belt fitted. Moreover, a new Fuel Filter and Pollen Filter have been fitted as well. as well. I've got the invoices of the work that has been carried out. The car drives absolutely perfect and it comes with some nice features as well which include Keyless Entry, Keyless Start, Electric Mirrors, Automatic Headlights, Dual Climate Control, Cruise Control, Air Conditioning, Multi-Function Steering Wheel, Hands Free, Sony Stereo with Bluetooth Connectivity, Electric Tailgate, Front and Rear Parking Sensors. The car does have a few age-related marks and dents but nothing major.`
-    },
      {
         id: 'nissan-xtrail-2016',
         title: 'Nissan X-Trail Acenta',
@@ -104,6 +70,13 @@ const vehicleDatabase = [
     },
 
     // Sold Vehicles section
+    {
+     id: 'ford-kuga-2014',
+        title: 'Ford Kuga Titanium AWD Euro 5',
+        year: 2014,
+        status: 'sold',
+        images: [ 'cars/soldcars/fordkugablue.jpg' ],
+    },
     {
     id: 'nissan-qashqai-2016',
         title: 'Nissan Qashqai DIG-T N-Connecta Euro 6',
