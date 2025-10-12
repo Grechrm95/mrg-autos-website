@@ -43,7 +43,7 @@ const vehicleDatabase = [
         id: 'ford-transit-custom-2016',
         title: 'Ford Transit Custom Euro 6 ',
         year: 2016,
-        price: '£7500',
+        price: '£7250',
         mileage: 84000,
         fuelType: 'Diesel',
         transmission: 'Manual',
