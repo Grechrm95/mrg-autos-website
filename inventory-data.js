@@ -13,7 +13,7 @@ const vehicleDatabase = [
         images: [
             'cars/hondacrv/main.jpg',
             'cars/hondacrv/main2.jpg',
-            'cars/hondacrv/front.jpg',
+            'cars/hondacrv/fornt.jpg',
             'cars/hondacrv/main3.jpg',
             'cars/hondacrv/main4.jpg',
             'cars/hondacrv/back.jpg',
