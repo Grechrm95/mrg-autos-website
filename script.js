@@ -73,9 +73,9 @@ document.addEventListener("DOMContentLoaded", () => {
                                         <li><i class='bx bxs-cog'></i> ${car.engineSize}</li>
                                     </ul>
                                     <p class="vehicle-description">${car.description}</p>
-                                    <a href="contact.html" class="btn-enquire">Enquire About This Vehicle</a>
+                                    <a href="contact.html?vehicle=${car.id}" class="btn-enquire">Enquire About This Vehicle</a>
                                 </div>
-                            </div>`;
+                            </div>`;;
 
                         placeholder.replaceWith(vehicleElement);
                     }
@@ -242,6 +242,37 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => { if (response.ok) { if (confirmationModal) confirmationModal.classList.remove('modal-hidden'); contactForm.reset(); } else { alert('Oops! There was a problem submitting your form.'); } }).catch(() => alert('Oops! There was a network error.'));
         });
         if (confirmationModal) { const closeModalBtn = confirmationModal.querySelector('.modal-close'); closeModalBtn.addEventListener('click', () => confirmationModal.classList.add('modal-hidden')); confirmationModal.addEventListener('click', (e) => { if (e.target === confirmationModal) confirmationModal.classList.add('modal-hidden'); }); }
+    }
+
+    const vehicleSelect = document.getElementById('vehicle-select');
+    if (vehicleSelect && typeof vehicleDatabase !== 'undefined') {
+        
+        // 1. Populate the dropdown with available cars
+        const availableVehicles = vehicleDatabase.filter(car => car.status !== 'sold');
+        availableVehicles.forEach(car => {
+            const option = document.createElement('option');
+            option.value = car.id;
+            // Use the car's title and year for the display text
+            option.textContent = `${car.title} (${car.year})`; 
+            vehicleSelect.appendChild(option);
+        });
+
+        // 2. Check for a URL parameter to pre-select a car
+        try {
+            const urlParams = new URLSearchParams(window.location.search);
+            const vehicleId = urlParams.get('vehicle');
+            
+            if (vehicleId) {
+                // Check if this vehicle ID exists in the dropdown
+                const optionExists = Array.from(vehicleSelect.options).some(opt => opt.value === vehicleId);
+                if (optionExists) {
+                    vehicleSelect.value = vehicleId;
+                }
+            }
+        } catch (error) {
+            console.error("Error processing URL parameters:", error);
+            // This can fail in some environments, but we don't want it to crash the page
+        }
     }
 
     // --- FINAL EXECUTION LOGIC ---
