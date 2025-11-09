@@ -37,44 +37,7 @@ const vehicleDatabase = [
 The car does have a few age-related marks but overall it’s in good condition.
 `
     },   
-    {
-        id: 'honda-crv-2013',
-        title: 'Honda CR-V i-DTEC SE',
-        year: 2013,
-        price: '£6000',
-        mileage: 84716,
-        fuelType: 'Diesel',
-        transmission: 'Manual',
-        engineSize: '1.6L',
-        status: 'available',
-        images: [
-            'cars/hondacrv/main.jpg',
-            'cars/hondacrv/main2.jpg',
-            'cars/hondacrv/fornt.jpg',
-            'cars/hondacrv/main3.jpg',
-            'cars/hondacrv/main4.jpg',
-            'cars/hondacrv/back.jpg',
-            'cars/hondacrv/back2.jpg',
-            'cars/hondacrv/back5.jpg',
-            'cars/hondacrv/back3.jpg',
-            'cars/hondacrv/back4.jpg',
-            'cars/hondacrv/boot.jpg',
-            'cars/hondacrv/spare.jpg',
-            'cars/hondacrv/front.jpg',
-            'cars/hondacrv/front2.jpg',
-            'cars/hondacrv/front3.jpg',
-            'cars/hondacrv/front4.jpg',
-            'cars/hondacrv/backseat.jpg',
-            'cars/hondacrv/backseat2.jpg',
-            'cars/hondacrv/backseat3.jpg',
-            'cars/hondacrv/dash.jpg',
-            'cars/hondacrv/dash2.jpg',
-            'cars/hondacrv/sterring.jpg',
-        ],
-        description: `Honda CR-V 2013 1.6 Diesel in good condition. The car comes with 2 Keys, Some Service History, Fresh Service and MOT until October 2026. With the Service the car has also had both front Stabilizer Links Changed, I have the invoice for all the work that has been carried out. The car comes with some nice features which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, AM/FM Stereo with Bluetooth Connectivity, Cruise Control, Dual Climate Control, Automatic Wipers, Automatic Headlight, Air Conditioning, Front and Rear Parking Sensors with Rear Camera. 
-The car does have a few age-related marks but overall it’s in good condition for its age.
-`
-    },
+  
      {
         id: 'nissan-xtrail-2016',
         title: 'Nissan X-Trail Acenta',
@@ -145,6 +108,15 @@ The car does have a few age-related marks but overall it’s in good condition f
     },
 
     // Sold Vehicles section
+    {
+     id: 'honda-crv-2013',
+        title: 'Honda CR-V i-DTEC SE',
+        year: 2013,
+        status: 'sold',
+        images: [
+            'cars/soldcars/HondaCRVRED.jpg',
+        ]
+    },
     {
      id: 'ford-kuga-2014',
         title: 'Ford Kuga Titanium AWD Euro 5',
@@ -274,4 +246,4 @@ The car does have a few age-related marks but overall it’s in good condition f
     },
 ];
 
-const featuredVehicleIds = ['ford-kuga-2014','nissan-xtrail-2016', 'vw-golf-2014', 'honda-crv-2013'];
+const featuredVehicleIds = ['nissan-xtrail-2016', 'vw-golf-2014', 'ford-transit-custom-2016'];
