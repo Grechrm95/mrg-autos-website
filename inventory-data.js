@@ -4,7 +4,7 @@ const vehicleDatabase = [
         id: 'vw-golf-2014',
         title: 'Volkswagen Golf Bluemotion',
         year: 2014,
-        price: '£6295',
+        price: '£6000',
         mileage: 81000,
         fuelType: 'Diesel',
         transmission: 'Automatic',
@@ -75,36 +75,6 @@ The car does have a few age-related marks but overall it’s in good condition.
             'cars/nissanxtrail/wheel4.webp'
         ],
         description: `Stunning Nissan X-Trail 2016 Acenta in very good condition. The car comes with Full Service History, MOT until June 2026 and 2 Keys. It's just had a fresh service. The car drives perfectly with no unwanted noises. It comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, AM/FM Stereo with Bluetooth Connectivity, Duel Climate Control, Air Conditioning, Multi-Functioning Steering Wheel, Cruise Control, Sunroof, Front and Rear Parking Sensors.`
-    },
- 
-    {
-        id: 'ford-transit-custom-2016',
-        title: 'Ford Transit Custom Euro 6 ',
-        year: 2016,
-        price: '£7250',
-        mileage: 84000,
-        fuelType: 'Diesel',
-        transmission: 'Manual',
-        engineSize: '2.0L',
-        status: 'available',
-        images: [
-            'cars/fordtransit/main.webp',
-            'cars/fordtransit/main2.webp',
-            'cars/fordtransit/main3.webp',
-            'cars/fordtransit/opendoorside.webp',
-            'cars/fordtransit/backside.webp',
-            'cars/fordtransit/backsideleft.webp',
-            'cars/fordtransit/backdoors.webp',
-            'cars/fordtransit/insideside.webp',
-            'cars/fordtransit/insideside2.webp',
-            'cars/fordtransit/driver seats.webp',
-            'cars/fordtransit/driverseat2.webp',
-            'cars/fordtransit/inside.webp',
-            'cars/fordtransit/seats.webp',
-            'cars/fordtransit/open seats.webp',
-            'cars/fordtransit/dash.webp'
-        ],
-        description: `Ford Transit Custom 2016 Euro 6 in good condition. It's only done 84000 miles, comes with MOT until May 2026 and 3 keys. It's recently had some work done which includes a Fresh Service, New Wet Belt, New Battery and Front Brake Pads and Disc, I have the invoice for the work that's been carried out. The car drives perfectly with no issues at all. It comes with some nice features aswell which include Central locking, Electric Windows, Electric Mirrors, Air Conditioning, Front and Rear Parking Sensors and AM/FM Stereo with Bluetooth.`
     },
 
     // Sold Vehicles section
@@ -246,4 +216,4 @@ The car does have a few age-related marks but overall it’s in good condition.
     },
 ];
 
-const featuredVehicleIds = ['nissan-xtrail-2016', 'vw-golf-2014', 'ford-transit-custom-2016'];
+const featuredVehicleIds = ['nissan-xtrail-2016', 'vw-golf-2014'];
