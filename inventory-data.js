@@ -1,42 +1,42 @@
 //car listing data for a vehicle inventory system
 const vehicleDatabase = [
-{
-        id: 'vw-golf-2014',
-        title: 'Volkswagen Golf Bluemotion',
-        year: 2014,
-        price: '£6000',
-        mileage: 81000,
-        fuelType: 'Diesel',
-        transmission: 'Automatic',
-        engineSize: '1.6L',
-        status: 'available',
-        images: [
-            'cars/vw/main.jpg',
-            'cars/vw/main1.jpg',
-            'cars/vw/main2.jpg',
-            'cars/vw/main3.jpg',
-            'cars/vw/back1.jpg',
-            'cars/vw/back2.jpg',
-            'cars/vw/back3.jpg',
-            'cars/vw/back4.jpg',
-            'cars/vw/back5.jpg',
-            'cars/vw/boot.jpg',
-            'cars/vw/frontseats.jpg',
-            'cars/vw/frontseats2.jpg',
-            'cars/vw/frontseats3.jpg',
-            'cars/vw/backseats.jpg',
-            'cars/vw/backseat2.jpg',
-            'cars/vw/backseat3.jpg',
-            'cars/vw/dash.jpg',
-            'cars/vw/dash2.jpg',
-            'cars/vw/center.jpg',
-            'cars/vw/sterring.jpg',
-            'cars/vw/lights.jpg'
-        ],
-        description: `Volkswagen Golf Estate 1.6 TDI 7 Speed DSG Automatic in good condition. The car comes with Service History and MOT until October 2026. Its recently had a Fresh Service and a new Timing Belt Kit with Water pump, I have the invoices of all the work that has been carried out. The car drives faultless and it’s a real pleasure to drive this car. It comes with some nice features as well which include Central Locking, Electric Windows, Electric Mirrors, Automatic Headlights, AM/FM Radio with Bluetooth Connectivity, Handsfree, Multi-Functioning Steering Wheel and Cruise Control.
-The car does have a few age-related marks but overall it’s in good condition.
-`
-    },   
+// {
+//         id: 'vw-golf-2014',
+//         title: 'Volkswagen Golf Bluemotion',
+//         year: 2014,
+//         price: '£6000',
+//         mileage: 81000,
+//         fuelType: 'Diesel',
+//         transmission: 'Automatic',
+//         engineSize: '1.6L',
+//         status: 'available',
+//         images: [
+//             'cars/vw/main.jpg',
+//             'cars/vw/main1.jpg',
+//             'cars/vw/main2.jpg',
+//             'cars/vw/main3.jpg',
+//             'cars/vw/back1.jpg',
+//             'cars/vw/back2.jpg',
+//             'cars/vw/back3.jpg',
+//             'cars/vw/back4.jpg',
+//             'cars/vw/back5.jpg',
+//             'cars/vw/boot.jpg',
+//             'cars/vw/frontseats.jpg',
+//             'cars/vw/frontseats2.jpg',
+//             'cars/vw/frontseats3.jpg',
+//             'cars/vw/backseats.jpg',
+//             'cars/vw/backseat2.jpg',
+//             'cars/vw/backseat3.jpg',
+//             'cars/vw/dash.jpg',
+//             'cars/vw/dash2.jpg',
+//             'cars/vw/center.jpg',
+//             'cars/vw/sterring.jpg',
+//             'cars/vw/lights.jpg'
+//         ],
+//         description: `Volkswagen Golf Estate 1.6 TDI 7 Speed DSG Automatic in good condition. The car comes with Service History and MOT until October 2026. Its recently had a Fresh Service and a new Timing Belt Kit with Water pump, I have the invoices of all the work that has been carried out. The car drives faultless and it’s a real pleasure to drive this car. It comes with some nice features as well which include Central Locking, Electric Windows, Electric Mirrors, Automatic Headlights, AM/FM Radio with Bluetooth Connectivity, Handsfree, Multi-Functioning Steering Wheel and Cruise Control.
+// The car does have a few age-related marks but overall it’s in good condition.
+// `
+//     },   
   
      {
         id: 'nissan-xtrail-2016',
@@ -216,4 +216,4 @@ The car does have a few age-related marks but overall it’s in good condition.
     },
 ];
 
-const featuredVehicleIds = ['nissan-xtrail-2016', 'vw-golf-2014'];
+const featuredVehicleIds = ['nissan-xtrail-2016', /*'vw-golf-2014'*/];
