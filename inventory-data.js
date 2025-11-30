@@ -4,7 +4,7 @@ const vehicleDatabase = [
         id: 'hyundai-i20-2016',
         title: 'Hyundai I20 Coupe',
         year: 2016,
-        price: '£5500',
+        price: '£5000',
         mileage: 70500,
         fuelType: 'Petrol',
         transmission: 'Manual',
