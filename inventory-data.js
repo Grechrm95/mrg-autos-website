@@ -1,39 +1,6 @@
 //car listing data for a vehicle inventory system
 const vehicleDatabase = [
-    {
-        id: 'hyundai-i20-2016',
-        title: 'Hyundai I20 Coupe',
-        year: 2016,
-        price: '£5000',
-        mileage: 70500,
-        fuelType: 'Petrol',
-        transmission: 'Manual',
-        engineSize: '1.2L',
-        status: 'available',
-        images: [
-            'cars/hyundai/main.jpg',
-            'cars/hyundai/main2.jpg',
-            'cars/hyundai/front.jpg',
-            'cars/hyundai/main3.jpg',
-            'cars/hyundai/main4.jpg',
-            'cars/hyundai/back1.jpg',
-            'cars/hyundai/back2.jpg',
-            'cars/hyundai/back.jpg',
-            'cars/hyundai/back3.jpg',
-            'cars/hyundai/back4.jpg',
-            'cars/hyundai/boot.jpg',
-            'cars/hyundai/dash.jpg',
-            'cars/hyundai/dash2.jpg',
-            'cars/hyundai/dash3.jpg',
-            'cars/hyundai/steering.jpg',
-            'cars/hyundai/frontseats.jpg',
-            'cars/hyundai/backseats.jpg',
-            'cars/hyundai/cupholder.jpg',
-
-        ],
-        description: `Hyundai I20 Coupe 1.2 Petrol in good condition.  The car comes with MOT until November 2026, Service History, a Fresh Service and had a New Clutch. I have the invoice for the work that’s been carried out. The car drives well and comes with some nice features which include Central Locking, Electric Windows, Electric Mirrors, AM/FM Stereo with Bluetooth Connectivity, Cruise Control, Hands Free and Rear Parking Sensors.`
-    }, 
-    {
+       {
         id: 'nissan-xtrail-2016',
         title: 'Nissan X-Trail Acenta',
         year: 2016,
@@ -211,4 +178,4 @@ const vehicleDatabase = [
     },
 ];
 
-const featuredVehicleIds = ['nissan-xtrail-2016','hyundai-i20-2016'];
+const featuredVehicleIds = ['nissan-xtrail-2016'];
