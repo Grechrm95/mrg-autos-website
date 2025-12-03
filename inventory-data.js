@@ -1,5 +1,40 @@
 //car listing data for a vehicle inventory system
 const vehicleDatabase = [
+    {
+        id: 'peugeot-2008-2016',
+        title: 'Peugeot 2008 Allure',
+        year: 2016,
+        price: '£5500',
+        mileage: 69500,
+        fuelType: 'Diesel',
+        transmission: 'Manual',
+        engineSize: '1.6L',
+        status: 'available',
+        images: [
+            'cars/2008/main.jpg',
+            'cars/2008/main2.jpg',
+            'cars/2008/front.jpg',
+            'cars/2008/main3.jpg',
+            'cars/2008/main4.jpg',
+            'cars/2008/back1.jpg',
+            'cars/2008/back2.jpg',
+            'cars/2008/back.jpg',
+            'cars/2008/back3.jpg',
+            'cars/2008/boot.jpg',
+            'cars/2008/frontseats.jpg',
+            'cars/2008/frontseats2.jpg',
+            'cars/2008/frontseats3.jpg',
+            'cars/2008/backseats.jpg',
+            'cars/2008/backseats2.jpg',
+            'cars/2008/dash.jpg',
+            'cars/2008/dash1.jpg',
+            'cars/2008/dash2.jpg',
+            'cars/2008/radio.jpg',
+            'cars/2008/radio2.jpg',           
+        ],
+        description: `Peugeot 2008 1.6 Diesel in very good condition. The car has only done 69500 Miles, comes with 2 Keys, Full-Service History and MOT until September 2026. Its recently had some work done to it which includes a New Timing Belt Kit with Water pump, Disc and Pads all around as well. I have the invoices of all the work that's been carries out. The car drives perfectly and it comes with some nice features as well which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, Dual Climate Control, AM/FM Stereo with Bluetooth Connectivity, Apple CarPlay, Air Conditioning, Cruise Control and Rear Parking Sensors.`
+    },
+
        {
         id: 'nissan-xtrail-2016',
         title: 'Nissan X-Trail Acenta',
@@ -178,4 +213,4 @@ const vehicleDatabase = [
     },
 ];
 
-const featuredVehicleIds = ['nissan-xtrail-2016'];
+const featuredVehicleIds = ['nissan-xtrail-2016','peugeot-2008-2016'];
