@@ -1,5 +1,44 @@
 //car listing data for a vehicle inventory system
 const vehicleDatabase = [
+     {
+        id: 'kia-ceed-2020',
+        title: 'Kia Ceed GDi ECO 2 Sportswagon Euro 6',
+        year: 2020,
+        price: '£9000',
+        mileage: 61351,
+        fuelType: 'Petrol',
+        transmission: 'Manual',
+        engineSize: '1.0L',
+        status: 'available',
+        images: [
+            'cars/Kia/main1.jpg',
+            'cars/Kia/main2.jpg',
+            'cars/Kia/front.jpg',
+            'cars/Kia/main3.jpg',
+            'cars/Kia/main4.jpg',
+            'cars/Kia/back1.jpg',
+            'cars/Kia/back2.jpg',
+            'cars/Kia/back.jpg',
+            'cars/Kia/back3.jpg',
+            'cars/Kia/back4.jpg',
+            'cars/Kia/boot.jpg',
+            'cars/Kia/forntseats.jpg',
+            'cars/Kia/frontseats1.jpg',
+            'cars/Kia/frontseats2.jpg',
+            'cars/Kia/frontseats3.jpg',
+            'cars/Kia/backseats.jpg',
+            'cars/Kia/backseats1.jpg',
+            'cars/Kia/backseats2.jpg',
+            'cars/Kia/dash.jpg',
+            'cars/Kia/dash1.jpg',
+            'cars/Kia/console.jpg',
+            'cars/Kia/console1.jpg',
+            'cars/Kia/console2.jpg',           
+        ],
+        description: `This Kia Ceed Sportswagon is a fantastic choice if you need the practicality of an estate without the high running costs. The 1.0L Turbo engine (6-speed) strikes a great balance—it is punchy enough for the motorway but keeps fuel and insurance costs down.
+         The car drives perfectly and it comes with service history and a fresh service. This car comes with some nice features which include Central Locking, Electric Windows,  AM/FM Stereo with Bluetooth Connectivity, Automatic Lights, Multi-Functioning Steering Wheel, Cruise Control and Revising Camera.`
+    },
+
     {
         id: 'peugeot-2008-2016',
         title: 'Peugeot 2008 Allure',
@@ -40,7 +79,7 @@ const vehicleDatabase = [
         title: 'Nissan X-Trail Acenta',
         year: 2016,
         price: '£7500',
-        mileage: 57000,
+        mileage: 58000,
         fuelType: 'Diesel',
         transmission: 'Manual',
         engineSize: '1.6L',
@@ -212,5 +251,4 @@ const vehicleDatabase = [
         images: [ 'cars/soldcars/nissanqas.webp' ],
     },
 ];
-
-const featuredVehicleIds = ['nissan-xtrail-2016','peugeot-2008-2016'];
+const featuredVehicleIds = ['nissan-xtrail-2016','peugeot-2008-2016','kia-ceed-2020'];
