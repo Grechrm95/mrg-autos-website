@@ -36,7 +36,7 @@ const vehicleDatabase = [
             'cars/Kia/console2.jpg',           
         ],
         description: `This Kia Ceed Sportswagon is a fantastic choice if you need the practicality of an estate without the high running costs. The 1.0L Turbo engine (6-speed) strikes a great balance—it is punchy enough for the motorway but keeps fuel and insurance costs down.
-         The car drives perfectly and it comes with service history and a fresh service. This car comes with some nice features which include Central Locking, Electric Windows,  AM/FM Stereo with Bluetooth Connectivity, Automatic Lights, Multi-Functioning Steering Wheel, Cruise Control and Revising Camera.`
+         The car drives perfectly and it comes with service history and a fresh service. This car comes with some nice features which include Central Locking, Electric Windows,  AM/FM Stereo with Bluetooth Connectivity, Automatic Lights, Multi-Functioning Steering Wheel, Apple & Android CarPlay, Cruise Control and Revising Camera.`
     },
 
     {
@@ -71,7 +71,7 @@ const vehicleDatabase = [
             'cars/2008/radio.jpg',
             'cars/2008/radio2.jpg',           
         ],
-        description: `Peugeot 2008 1.6 Diesel in very good condition. The car has only done 69500 Miles, comes with 2 Keys, Full-Service History and MOT until September 2026. Its recently had some work done to it which includes a New Timing Belt Kit with Water pump, Disc and Pads all around as well. I have the invoices of all the work that's been carries out. The car drives perfectly and it comes with some nice features as well which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, Dual Climate Control, AM/FM Stereo with Bluetooth Connectivity, Apple CarPlay, Air Conditioning, Cruise Control and Rear Parking Sensors.`
+        description: `If you are looking for a reliable diesel crossover, this Peugeot 2008 1.6 Allure stands out for one major reason: we have just replaced the Timing Belt and Water Pump, plus fitted new brake discs and pads all around. This is the big maintenance cost buyers worry about, and it’s already done for you with invoices to prove it. With only 69,500 miles, a fresh MOT until September 2026, and Full Service History, this car is mechanically sorted and ready for the long haul. It is also the high-spec Allure model, featuring Apple CarPlay for your maps and music, Dual Climate Control, Cruise Control, and Rear Parking Sensors, all wrapped up in a car that is in very good condition and drives perfectly.`
     },
 
        {
@@ -110,9 +110,8 @@ const vehicleDatabase = [
             'cars/nissanxtrail/wheel3.webp',
             'cars/nissanxtrail/wheel4.webp'
         ],
-        description: `Stunning Nissan X-Trail 2016 Acenta in very good condition. The car comes with Full Service History, MOT until June 2026 and 2 Keys. It's just had a fresh service. The car drives perfectly with no unwanted noises. It comes with some nice features aswell which includes Central Locking, Electric Windows, Electric Mirrors, Electric Folding Mirrors, AM/FM Stereo with Bluetooth Connectivity, Duel Climate Control, Air Conditioning, Multi-Functioning Steering Wheel, Cruise Control, Sunroof, Front and Rear Parking Sensors.`
+        description: `This X-Trail Acenta is a low-mileage gem that feels fresh and has years of life left in it. The standout feature is the Panoramic Sunroof (check the photos), which floods the cabin with light and makes the whole car feel more premium. It’s practical, too, with Front and Rear Parking Sensors to help with the size, Dual Climate Control, and Cruise Control for motorway runs. We have just given it a fresh service to back up its Full Service History, and it comes with a long MOT until June 2026. A spacious, safe, and reliable family car that hasn't been overworked.` 
     },
-
     // Sold Vehicles section
     {
      id: 'honda-crv-2013',
