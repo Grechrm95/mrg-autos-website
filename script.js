@@ -49,8 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         vehicleElement.className = placeholder.className.replace('vehicle-placeholder', 'vehicle-listing');
                         vehicleElement.dataset.carId = car.id;
                         
-                        const thumbnailsHTML = car.images.length > 1 ? `<div class="vehicle-listing__thumbnails">${car.images.slice(0, 4).map((img, i) => `<img src="${img}" alt="Thumbnail ${i + 1} of ${car.title}" class="thumbnail-img" data-index="${i}">`).join('')}</div>` : '';
-                        const carouselArrowsHTML = car.images.length > 1 ? `<a class="listing-prev">&#10094;</a><a class="listing-next">&#10095;</a>` : '';
+                        // ACCESSIBILITY: Changed thumbnails to BUTTONS for keyboard access
+                        const thumbnailsHTML = car.images.length > 1 ? `<div class="vehicle-listing__thumbnails">${car.images.slice(0, 4).map((img, i) => `<button type="button" class="thumbnail-btn"><img src="${img}" alt="Thumbnail ${i + 1} of ${car.title}" class="thumbnail-img" data-index="${i}"></button>`).join('')}</div>` : '';
+                        
+                        // ACCESSIBILITY: Changed arrows to BUTTONS for keyboard access
+                        const carouselArrowsHTML = car.images.length > 1 ? `<button type="button" class="listing-prev" aria-label="Previous image">&#10094;</button><button type="button" class="listing-next" aria-label="Next image">&#10095;</button>` : '';
                         
                         vehicleElement.innerHTML = `
                             <div class="vehicle-listing__header">
@@ -170,22 +173,36 @@ document.addEventListener("DOMContentLoaded", () => {
          // Select all parts of the lightbox component.
          const lightboxContent = lightbox.querySelector('.lightbox-content'), lightboxImg = lightbox.querySelector('.lightbox-main-image'), lightboxThumbContainer = lightbox.querySelector('.lightbox-thumbnails-container'), lightboxCounter = lightbox.querySelector('.lightbox-counter'), closeBtn = lightbox.querySelector('.lightbox-close'), prevBtn = lightbox.querySelector('.lightbox-prev'), nextBtn = lightbox.querySelector('.lightbox-next');
         // (and so on for lightboxImg, closeBtn, prevBtn, etc.)
-         let currentCarImages = [], currentImageIndex = 0, touchStartX = 0, touchEndX = 0;
+         let currentCarImages = [], currentImageIndex = 0, touchStartX = 0, touchEndX = 0, currentCarTitle = ""; // Added car title for Alt tag
         // Opens the lightbox with the images for a specific car
          function openLightbox(carId, imageIndex) {
             const car = vehicleDatabase.find(c => c.id === carId);
             if (!car) return;
             currentCarImages = car.images;
+            currentCarTitle = car.title; // Store title
             currentImageIndex = parseInt(imageIndex);
             lightbox.classList.remove('lightbox-hidden');
             document.body.classList.add('lightbox-active');
             updateLightboxContent();
+            
+            // Focus trap: move focus to close button when opened
+            closeBtn.focus();
         }
         // Updates the main image, counter, and thumbnails inside the lightbox.
         function updateLightboxContent() {
             lightboxImg.src = currentCarImages[currentImageIndex];
+            // ACCESSIBILITY: Update the Alt tag dynamically so screen readers know which car it is
+            lightboxImg.alt = `${currentCarTitle} - Image ${currentImageIndex + 1} of ${currentCarImages.length}`;
+            
             if(lightboxCounter) lightboxCounter.textContent = `Image ${currentImageIndex + 1} of ${currentCarImages.length}`;
-            const thumbnailsHTML = currentCarImages.map((imgSrc, index) => `<img src="${imgSrc}" data-index="${index}" class="thumbnail-img ${index === currentImageIndex ? 'active' : ''}" alt="Thumbnail ${index + 1}">`).join('');
+            
+            // ACCESSIBILITY: Used Buttons for thumbnails
+            const thumbnailsHTML = currentCarImages.map((imgSrc, index) => 
+                `<button type="button" class="thumb-btn ${index === currentImageIndex ? 'active' : ''}">
+                    <img src="${imgSrc}" data-index="${index}" class="thumbnail-img ${index === currentImageIndex ? 'active' : ''}" alt="Thumbnail ${index + 1}">
+                 </button>`
+            ).join('');
+            
             lightboxThumbContainer.innerHTML = thumbnailsHTML;
             const activeThumb = lightboxThumbContainer.querySelector('.active');
             if (activeThumb) activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
@@ -207,8 +224,22 @@ document.addEventListener("DOMContentLoaded", () => {
             nextBtn.addEventListener('click', showNextImage);
             prevBtn.addEventListener('click', showPrevImage);
             lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-            document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !lightbox.classList.contains('lightbox-hidden')) closeLightbox(); });
-            lightboxThumbContainer.addEventListener('click', (e) => { if (e.target.classList.contains('thumbnail-img')) { currentImageIndex = parseInt(e.target.dataset.index); updateLightboxContent(); }});
+            document.addEventListener('keydown', (e) => { 
+                if (lightbox.classList.contains('lightbox-hidden')) return;
+                
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight') showNextImage();
+                if (e.key === 'ArrowLeft') showPrevImage();
+            });
+            // Updated to handle clicks on the button wrapper or the image
+            lightboxThumbContainer.addEventListener('click', (e) => { 
+                const target = e.target.closest('.thumb-btn') || e.target;
+                if (target.classList.contains('thumbnail-img') || target.querySelector('.thumbnail-img')) { 
+                    const img = target.classList.contains('thumbnail-img') ? target : target.querySelector('.thumbnail-img');
+                    currentImageIndex = parseInt(img.dataset.index); 
+                    updateLightboxContent(); 
+                }
+            });
         }
     }
 
@@ -217,19 +248,61 @@ document.addEventListener("DOMContentLoaded", () => {
      // Adds functionality to the small thumbnails on the main inventory page.
     function addPageGalleryFunctionality() {
         if (!inventoryListContainer) return;
-        inventoryListContainer.addEventListener('click', (e) => { if (e.target.classList.contains('thumbnail-img')) { e.stopPropagation(); const gallery = e.target.closest('.vehicle-listing__image-gallery'); if (gallery) { const mainImage = gallery.querySelector('.main-img'); const currentActive = gallery.querySelector('.thumbnail-img.active'); if (currentActive) currentActive.classList.remove('active'); e.target.classList.add('active'); mainImage.src = e.target.src; mainImage.dataset.index = e.target.dataset.index; } } });
+        inventoryListContainer.addEventListener('click', (e) => { 
+            // Handle both the button click and the image click inside the button
+            const target = e.target.closest('.thumbnail-btn');
+            if (target) { 
+                e.stopPropagation(); 
+                const img = target.querySelector('.thumbnail-img');
+                const gallery = target.closest('.vehicle-listing__image-gallery'); 
+                if (gallery) { 
+                    const mainImage = gallery.querySelector('.main-img'); 
+                    // Remove active class from all images in this specific gallery
+                    const allThumbs = gallery.querySelectorAll('.thumbnail-img');
+                    allThumbs.forEach(t => t.classList.remove('active'));
+                    
+                    img.classList.add('active'); 
+                    mainImage.src = img.src; 
+                    mainImage.dataset.index = img.dataset.index; 
+                } 
+            } 
+        });
     }
 
     // Adds functionality to the previous/next arrows on the main inventory page.
     function addListingCarouselFunctionality() {
         if (!inventoryListContainer) return;
         let touchStartX = 0;
-        const changeImage = (listing, direction) => { const mainImg = listing.querySelector('.main-img'); const car = vehicleDatabase.find(c => c.id === listing.dataset.carId); if (!car || car.images.length <= 1) return; let currentIndex = parseInt(mainImg.dataset.index, 10); currentIndex = (currentIndex + direction + car.images.length) % car.images.length; mainImg.src = car.images[currentIndex]; mainImg.dataset.index = currentIndex; const currentActive = listing.querySelector('.thumbnail-img.active'); if (currentActive) currentActive.classList.remove('active'); const newActive = listing.querySelector(`.thumbnail-img[data-index="${currentIndex}"]`); if (newActive) newActive.classList.add('active'); };
-        inventoryListContainer.addEventListener('click', (e) => { if (e.target.matches('.listing-prev, .listing-next')) { e.stopPropagation(); const listing = e.target.closest('.vehicle-listing'); const direction = e.target.classList.contains('listing-next') ? 1 : -1; changeImage(listing, direction); } });
+        const changeImage = (listing, direction) => { 
+            const mainImg = listing.querySelector('.main-img'); 
+            const car = vehicleDatabase.find(c => c.id === listing.dataset.carId); 
+            if (!car || car.images.length <= 1) return; 
+            
+            let currentIndex = parseInt(mainImg.dataset.index, 10); 
+            currentIndex = (currentIndex + direction + car.images.length) % car.images.length; 
+            
+            mainImg.src = car.images[currentIndex]; 
+            mainImg.dataset.index = currentIndex; 
+            
+            // Sync thumbnail highlights
+            const allThumbs = listing.querySelectorAll('.thumbnail-img');
+            allThumbs.forEach(t => t.classList.remove('active'));
+            
+            const newActive = listing.querySelector(`.thumbnail-img[data-index="${currentIndex}"]`); 
+            if (newActive) newActive.classList.add('active'); 
+        };
+        
+        inventoryListContainer.addEventListener('click', (e) => { 
+            if (e.target.matches('.listing-prev, .listing-next')) { 
+                e.stopPropagation(); 
+                const listing = e.target.closest('.vehicle-listing'); 
+                const direction = e.target.classList.contains('listing-next') ? 1 : -1; 
+                changeImage(listing, direction); 
+            } 
+        });
         inventoryListContainer.addEventListener('touchstart', e => { if (e.target.matches('.vehicle-listing__image .main-img, .vehicle-listing__image .listing-prev, .vehicle-listing__image .listing-next')) { touchStartX = e.changedTouches[0].screenX; } }, { passive: true });
         inventoryListContainer.addEventListener('touchend', e => { if (e.target.matches('.vehicle-listing__image .main-img, .vehicle-listing__image .listing-prev, .vehicle-listing__image .listing-next') && touchStartX !== 0) { const touchEndX = e.changedTouches[0].screenX; const listing = e.target.closest('.vehicle-listing'); if (touchEndX < touchStartX - 50) { changeImage(listing, 1); } if (touchEndX > touchStartX + 50) { changeImage(listing, -1); } touchStartX = 0; } });
     }
-
       // --- Contact Form Handler ---
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
@@ -291,14 +364,14 @@ document.addEventListener("DOMContentLoaded", () => {
         displaySoldVehicles(soldVehicles);
     }
 
-    // --- START: NEW FACEBOOK DEEP LINK CODE ---
+    // --- START: FACEBOOK DEEP LINK CODE ---
     const facebookButton = document.getElementById('facebook-link');
 
     if (facebookButton) {
       facebookButton.addEventListener('click', function(event) {
         event.preventDefault();
 
-        // IMPORTANT: Replace 'YOUR_NUMERIC_ID' with the ID you found in Step 1
+       
         const facebookId = '100084010458557'; 
         const appUri = `fb://profile/${facebookId}`;
         const fallbackUrl = 'https://www.facebook.com/mrgautos';
@@ -314,5 +387,5 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = appUri;
       });
     }
-    // --- END: NEW FACEBOOK DEEP LINK CODE ---
+    // --- END:FACEBOOK DEEP LINK CODE ---
 });

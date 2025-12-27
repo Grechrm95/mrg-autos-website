@@ -72,7 +72,7 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <div id="menu-icon" class="bx bx-menu"></div>
+        <button id="menu-icon" class="bx bx-menu" aria-label="Toggle navigation menu" aria-expanded="false"></button>
     </header>
 
     <main>
@@ -123,13 +123,15 @@
         </div>
     </footer>
 
-    <!-- NEW: Lightbox Container (Hidden by default) -->
-    <div id="lightbox-overlay" class="lightbox-hidden">
-        <span class="lightbox-close">&times;</span>
+    <!--Lightbox Container (Hidden by default) -->
+   <div id="lightbox-overlay" class="lightbox-hidden">
+        <!-- ACCESSIBILITY CHANGE: Changed span to button -->
+        <button class="lightbox-close" aria-label="Close gallery">&times;</button>
         <div class="lightbox-content">
             <img src="" alt="Lightbox image" class="lightbox-main-image">
-            <a class="lightbox-prev">&#10094;</a>
-            <a class="lightbox-next">&#10095;</a>
+            <!-- ACCESSIBILITY CHANGE: Changed a tags to buttons -->
+            <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+            <button class="lightbox-next" aria-label="Next image">&#10095;</button>
             <div class="lightbox-info">
                 <p class="lightbox-counter"></p>
             </div>

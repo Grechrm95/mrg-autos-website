@@ -121,6 +121,9 @@ a {
     cursor: pointer;
     color: var(--white);
     transition: transform 0.3s ease;
+    background: none;
+    border: none;
+    padding: 0;
 }
 
 
@@ -309,6 +312,14 @@ main {
     gap: 0.75rem;
 }
 
+.vehicle-listing__thumbnails .thumbnail-btn {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+}
+
 .vehicle-listing__thumbnails .thumbnail-img {
     width: 100%;
     aspect-ratio: 4 / 3;
@@ -449,7 +460,11 @@ main {
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;
-     z-index: 10;  /* Ensures the close button is on top of the lightbox image container */
+    z-index: 10;  /* Ensures the close button is on top of the lightbox image container */
+    background: none;
+    border: none;
+    padding: 0;
+    line-height: 1;
 }
 .lightbox-close:hover {
     color: #bbb;
@@ -484,6 +499,7 @@ main {
     transition: 0.3s ease;
     user-select: none; /* Prevents text selection on double click */
     background-color: rgba(0,0,0,0.3);
+    border: none;
 }
 .lightbox-prev { left: 0; }
 .lightbox-next { right: 0; }
@@ -514,6 +530,13 @@ main {
     gap: 10px;
     overflow-x: auto;
     padding-bottom: 10px;
+}
+
+.lightbox-thumbnails-container .thumb-btn {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .lightbox-thumbnails-container img {
@@ -551,10 +574,13 @@ main {
     background-color: rgba(0,0,0,0.2);
     opacity: 0; /* Hidden by default, appear on hover */
     z-index: 5;
+    border: none;
 }
 
 .vehicle-listing__image:hover .listing-prev,
-.vehicle-listing__image:hover .listing-next {
+.vehicle-listing__image:hover .listing-next,
+.listing-prev:focus,
+.listing-next:focus {
     opacity: 1;
 }
 
@@ -695,6 +721,8 @@ main {
     color: #aaa;
     cursor: pointer;
     transition: color 0.2s ease;
+    background: none;
+    border: none;
 }
 
 .modal-close:hover {
@@ -1078,4 +1106,68 @@ main {
         margin-top: 5px;
         padding: 8px 16px;
     }
+}
+
+@media screen and (orientation: landscape) and (max-height: 600px) {
+    /* 1. Remove padding from the overlay to use full screen real estate */
+    #lightbox-overlay {
+        padding: 0;
+        background-color: rgba(0, 0, 0, 1); /* Solid black background for better focus */
+    }
+
+    /* 2. Allow the content container to take up full available height and width */
+    .lightbox-content {
+        max-height: 100vh;
+        height: 100vh;
+        width: 100vw;
+        max-width: 100vw;
+        border-radius: 0; /* Remove border radius if any */
+    }
+
+    /* 3. Force the image to fit effectively within the full screen */
+    .lightbox-main-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Keeps aspect ratio intact */
+    }
+
+    /* 4. Hide thumbnails in landscape to give the image maximum vertical space */
+    .lightbox-thumbnails-container {
+        display: none;
+    }
+
+    /* 5. Adjust close button to be less intrusive */
+    .lightbox-close {
+        top: 5px;
+        right: 15px;
+        background: rgba(0,0,0,0.5); /* Semi-transparent background to see it over the image */
+        padding: 0 12px;
+        border-radius: 4px;
+        z-index: 2005;
+    }
+
+    /* 6. Adjust arrows for landscape touch targets */
+    .lightbox-prev, .lightbox-next {
+        padding: 20px;
+        background-color: rgba(0,0,0,0.2);
+    }
+}
+
+/* Ensure all interactive elements have a visible focus state for keyboard users */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid #ff9800; /* High contrast orange outline */
+    outline-offset: 2px;
+    z-index: 1000; /* Ensure focus ring is on top */
+}
+
+/* Remove default button styling for icon buttons so they look like icons but act like buttons */
+button.bx {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'boxicons'; /* Ensure it keeps the icon font family */
 }
