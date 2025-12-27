@@ -216,6 +216,26 @@ document.addEventListener("DOMContentLoaded", () => {
         lightboxContent.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, {passive: true});
         lightboxContent.addEventListener('touchend', e => { touchEndX = e.changedTouches[0].screenX; handleSwipe(); });
         
+        function trapFocus(e) {
+            const focusableElements = lightbox.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+            const firstElement = focusableElements[0];
+            const lastElement = focusableElements[focusableElements.length - 1];
+
+            if (e.key === 'Tab') {
+                if (e.shiftKey) { // Shift + Tab (backwards)
+                    if (document.activeElement === firstElement) {
+                        e.preventDefault();
+                        lastElement.focus();
+                    }
+                } else { // Tab (forwards)
+                    if (document.activeElement === lastElement) {
+                        e.preventDefault();
+                        firstElement.focus();
+                    }
+                }
+            }
+        }
+
         // Adds all necessary event listeners for the lightbox (clicks, keys, swipes).
         function addLightboxEventListeners() {
             if (!inventoryListContainer) return;
@@ -230,6 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (e.key === 'Escape') closeLightbox();
                 if (e.key === 'ArrowRight') showNextImage();
                 if (e.key === 'ArrowLeft') showPrevImage();
+                if (e.key === 'Tab') trapFocus(e);
             });
             // Updated to handle clicks on the button wrapper or the image
             lightboxThumbContainer.addEventListener('click', (e) => { 

@@ -407,8 +407,8 @@ main {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 48px;
   background-color: #1877F2; /* Dark grey default background */
   border-radius: 50%;
   text-decoration: none;
