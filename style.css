@@ -1111,7 +1111,7 @@ main {
 @media screen and (orientation: landscape) and (max-height: 600px) {
     /* 1. Remove padding from the overlay to use full screen real estate */
     #lightbox-overlay {
-        padding: 0;
+        padding: 3px;
         background-color: rgba(0, 0, 0, 1); /* Solid black background for better focus */
     }
 
@@ -1154,14 +1154,15 @@ main {
 }
 
 /* Ensure all interactive elements have a visible focus state for keyboard users */
-button:focus-visible,
-a:focus-visible,
-input:focus-visible,
-textarea:focus-visible,
-select:focus-visible {
+/* CHANGE THIS BLOCK AT THE BOTTOM OF STYLE.CSS */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
     outline: 3px solid #ff9800; /* High contrast orange outline */
     outline-offset: 2px;
-    z-index: 1000; /* Ensure focus ring is on top */
+    z-index: 1000;
 }
 
 /* Remove default button styling for icon buttons so they look like icons but act like buttons */
