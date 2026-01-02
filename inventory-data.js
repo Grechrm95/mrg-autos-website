@@ -1,5 +1,39 @@
 //car listing data for a vehicle inventory system
 const vehicleDatabase = [
+    {
+        id: 'ford-ka-2019',
+        title: 'Ford KA+ Active',
+        year: 2019,
+        price: '£7000',
+        mileage: 36000,
+        fuelType: 'Petrol',
+        transmission: 'Manual',
+        engineSize: '1.2L',
+        status: 'available',
+        images: [
+            'cars/fordka/main.jpeg',
+            'cars/fordka/main2.jpeg',
+            'cars/fordka/front.jpeg',
+            'cars/fordka/main3.jpeg',
+            'cars/fordka/main4.jpeg',
+            'cars/fordka/back1.jpeg',
+            'cars/fordka/back2.jpeg',
+            'cars/fordka/back.jpeg',
+            'cars/fordka/back3.jpeg',
+            'cars/fordka/back4.jpeg',
+            'cars/fordka/boot.jpeg',
+            'cars/fordka/frontseats.jpeg',
+            'cars/fordka/frontseats1.jpeg',
+            'cars/fordka/frontseats2.jpeg',
+            'cars/fordka/frontseats3.jpeg',
+            'cars/fordka/backseats.jpeg',
+            'cars/fordka/backseats1.jpeg',
+            'cars/fordka/sterring.jpeg',
+            'cars/fordka/radio.jpeg',
+
+        ],
+        description: `If you are looking for a reliable, fuss-free runner, this KA+ Active is perfect. It has covered just 36,000 miles and is ready to drive away with zero headaches. I have just had the car serviced, and it comes with a long MOT until December 2026, so you won't need to worry about maintenance costs. It drives perfectly smooth, responsive, and ideal for both city driving and longer commutes. It also comes with some nice features which include Central Locking, Electric Windows, Electric Mirrors, Cruise Control, Air Conditioning and AM/FM Stereo with Bluetooth Connectivity. The car does have a few age-related marks but overall, it’s in good condition.`
+    },
      {
         id: 'ford-kuga-2016',
         title: 'Ford Kuga Titanium Sport',
