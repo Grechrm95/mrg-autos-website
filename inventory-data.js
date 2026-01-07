@@ -107,40 +107,7 @@ const vehicleDatabase = [
          The car drives perfectly and it comes with service history and a fresh service. This car comes with some nice features which include Central Locking, Electric Windows,  AM/FM Stereo with Bluetooth Connectivity, Automatic Lights, Multi-Functioning Steering Wheel, Apple & Android CarPlay, Cruise Control and Revising Camera.`
     },
 
-    {
-        id: 'peugeot-2008-2016',
-        title: 'Peugeot 2008 Allure',
-        year: 2016,
-        price: '£5000',
-        mileage: 69500,
-        fuelType: 'Diesel',
-        transmission: 'Manual',
-        engineSize: '1.6L',
-        status: 'available',
-        images: [
-            'cars/2008/main.jpg',
-            'cars/2008/main2.jpg',
-            'cars/2008/front.jpg',
-            'cars/2008/main3.jpg',
-            'cars/2008/main4.jpg',
-            'cars/2008/back1.jpg',
-            'cars/2008/back2.jpg',
-            'cars/2008/back.jpg',
-            'cars/2008/back3.jpg',
-            'cars/2008/boot.jpg',
-            'cars/2008/frontseats.jpg',
-            'cars/2008/frontseats2.jpg',
-            'cars/2008/frontseats3.jpg',
-            'cars/2008/backseats.jpg',
-            'cars/2008/backseats2.jpg',
-            'cars/2008/dash.jpg',
-            'cars/2008/dash1.jpg',
-            'cars/2008/dash2.jpg',
-            'cars/2008/radio.jpg',
-            'cars/2008/radio2.jpg',           
-        ],
-        description: `If you are looking for a reliable diesel crossover, this Peugeot 2008 1.6 Allure stands out for one major reason: we have just replaced the Timing Belt and Water Pump, plus fitted new brake discs and pads all around. This is the big maintenance cost buyers worry about, and it’s already done for you with invoices to prove it. With only 69,500 miles, a fresh MOT until September 2026, and Full Service History, this car is mechanically sorted and ready for the long haul. It is also the high-spec Allure model, featuring Apple CarPlay for your maps and music, Dual Climate Control, Cruise Control, and Rear Parking Sensors, all wrapped up in a car that is in very good condition and drives perfectly.`
-    },
+    
 
        {
         id: 'nissan-xtrail-2016',
@@ -189,6 +156,15 @@ const vehicleDatabase = [
         images: [
             'cars/soldcars/HondaCRVRED.jpg',
         ]
+    },
+    {
+        id: 'peugeot-2008-2016',
+        title: 'Peugeot 2008 Allure',
+       year: 2016,
+        status: 'sold',
+        images: [
+            'cars/soldcars/Peugeot 2008.jpg'
+            ],
     },
     {
      id: 'ford-kuga-2014',
