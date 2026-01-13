@@ -303,4 +303,4 @@ const vehicleDatabase = [
         images: [ 'cars/soldcars/nissanqas.webp' ],
     },
 ];
-const featuredVehicleIds = ['nissan-xtrail-2016','peugeot-2008-2016','kia-ceed-2020'];
+const featuredVehicleIds = ['nissan-xtrail-2016','ford-ka-2019','ford-kuga-2016'];
