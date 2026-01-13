@@ -68,44 +68,44 @@ const vehicleDatabase = [
         ],
         description: `This Ford Kuga Titanium Sport is a fantastic choice if you need a practical SUV with reliable performance. The 2.0L Diesel engine strikes a great balance—it is powerful for the motorway but smooth for daily driving. The car drives perfectly and has just had the timing belt, water pump, and brakes replaced (with invoices). These were replaced at 75817 on the clock. It comes with Full-Service History and MOT until Dec next year. It comes with some nice features as well such as Central Locking, Electric Windows, Electric Mirrors, Keyless Start, Automatic Headlights, Cruise Control, Air Conditioning, Self-Parking, Sat Nav, AM/FM Stereo with Bluetooth Connectivity, Front and Rear Parking Sensors.`
     },
-     {
-        id: 'kia-ceed-2020',
-        title: 'Kia Ceed GDi ECO 2 Sportswagon Euro 6',
-        year: 2020,
-        price: '£9000',
-        mileage: 61351,
-        fuelType: 'Petrol',
-        transmission: 'Manual',
-        engineSize: '1.0L',
-        status: 'available',
-        images: [
-            'cars/Kia/main1.jpg',
-            'cars/Kia/main2.jpg',
-            'cars/Kia/front.jpg',
-            'cars/Kia/main3.jpg',
-            'cars/Kia/main4.jpg',
-            'cars/Kia/back1.jpg',
-            'cars/Kia/back2.jpg',
-            'cars/Kia/back.jpg',
-            'cars/Kia/back3.jpg',
-            'cars/Kia/back4.jpg',
-            'cars/Kia/boot.jpg',
-            'cars/Kia/forntseats.jpg',
-            'cars/Kia/frontseats1.jpg',
-            'cars/Kia/frontseats2.jpg',
-            'cars/Kia/frontseats3.jpg',
-            'cars/Kia/backseats.jpg',
-            'cars/Kia/backseats1.jpg',
-            'cars/Kia/backseats2.jpg',
-            'cars/Kia/dash.jpg',
-            'cars/Kia/dash1.jpg',
-            'cars/Kia/console.jpg',
-            'cars/Kia/console1.jpg',
-            'cars/Kia/console2.jpg',           
-        ],
-        description: `This Kia Ceed Sportswagon is a fantastic choice if you need the practicality of an estate without the high running costs. The 1.0L Turbo engine (6-speed) strikes a great balance—it is punchy enough for the motorway but keeps fuel and insurance costs down.
-         The car drives perfectly and it comes with service history and a fresh service. This car comes with some nice features which include Central Locking, Electric Windows,  AM/FM Stereo with Bluetooth Connectivity, Automatic Lights, Multi-Functioning Steering Wheel, Apple & Android CarPlay, Cruise Control and Revising Camera.`
-    },
+    //  {
+    //     id: 'kia-ceed-2020',
+    //     title: 'Kia Ceed GDi ECO 2 Sportswagon Euro 6',
+    //     year: 2020,
+    //     price: '£9000',
+    //     mileage: 61351,
+    //     fuelType: 'Petrol',
+    //     transmission: 'Manual',
+    //     engineSize: '1.0L',
+    //     status: 'available',
+    //     images: [
+    //         'cars/Kia/main1.jpg',
+    //         'cars/Kia/main2.jpg',
+    //         'cars/Kia/front.jpg',
+    //         'cars/Kia/main3.jpg',
+    //         'cars/Kia/main4.jpg',
+    //         'cars/Kia/back1.jpg',
+    //         'cars/Kia/back2.jpg',
+    //         'cars/Kia/back.jpg',
+    //         'cars/Kia/back3.jpg',
+    //         'cars/Kia/back4.jpg',
+    //         'cars/Kia/boot.jpg',
+    //         'cars/Kia/forntseats.jpg',
+    //         'cars/Kia/frontseats1.jpg',
+    //         'cars/Kia/frontseats2.jpg',
+    //         'cars/Kia/frontseats3.jpg',
+    //         'cars/Kia/backseats.jpg',
+    //         'cars/Kia/backseats1.jpg',
+    //         'cars/Kia/backseats2.jpg',
+    //         'cars/Kia/dash.jpg',
+    //         'cars/Kia/dash1.jpg',
+    //         'cars/Kia/console.jpg',
+    //         'cars/Kia/console1.jpg',
+    //         'cars/Kia/console2.jpg',           
+    //     ],
+    //     description: `This Kia Ceed Sportswagon is a fantastic choice if you need the practicality of an estate without the high running costs. The 1.0L Turbo engine (6-speed) strikes a great balance—it is punchy enough for the motorway but keeps fuel and insurance costs down.
+    //      The car drives perfectly and it comes with service history and a fresh service. This car comes with some nice features which include Central Locking, Electric Windows,  AM/FM Stereo with Bluetooth Connectivity, Automatic Lights, Multi-Functioning Steering Wheel, Apple & Android CarPlay, Cruise Control and Revising Camera.`
+    // },
 
     
 
@@ -148,6 +148,15 @@ const vehicleDatabase = [
         description: `This X-Trail Acenta is a low-mileage gem that feels fresh and has years of life left in it. The standout feature is the Panoramic Sunroof (check the photos), which floods the cabin with light and makes the whole car feel more premium. It’s practical, too, with Front and Rear Parking Sensors to help with the size, Dual Climate Control, and Cruise Control for motorway runs. We have just given it a fresh service to back up its Full Service History, and it comes with a long MOT until June 2026. A spacious, safe, and reliable family car that hasn't been overworked.` 
     },
     // Sold Vehicles section
+    {
+     id: 'kia-ceed-2020',
+        title: 'Kia Ceed GDi ECO 2 Sportswagon Euro 6',
+        year: 2020,
+        status: 'sold',
+        images: [
+            'cars/soldcars/kiaceed.jpg',
+        ]
+    },
     {
      id: 'honda-crv-2013',
         title: 'Honda CR-V i-DTEC SE',
