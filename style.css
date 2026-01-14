@@ -1160,6 +1160,15 @@ a:focus,
 input:focus,
 textarea:focus,
 select:focus {
+    outline: transparent; /* Cleaner than 'none' for accessibility modes */
+}
+
+/* 2. Apply the ring ONLY when navigating via keyboard (or for text inputs that need it) */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
     outline: 3px solid #ff9800; /* High contrast orange outline */
     outline-offset: 2px;
     z-index: 1000;
