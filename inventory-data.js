@@ -34,40 +34,40 @@ const vehicleDatabase = [
         ],
         description: `If you are looking for a reliable, fuss-free runner, this KA+ Active is perfect. It has covered just 36,000 miles and is ready to drive away with zero headaches. I have just had the car serviced, and it comes with a long MOT until December 2026, so you won't need to worry about maintenance costs. It drives perfectly smooth, responsive, and ideal for both city driving and longer commutes. It also comes with some nice features which include Central Locking, Electric Windows, Electric Mirrors, Cruise Control, Air Conditioning and AM/FM Stereo with Bluetooth Connectivity. The car does have a few age-related marks but overall, it’s in good condition.`
     },
-     {
-        id: 'ford-kuga-2016',
-        title: 'Ford Kuga Titanium Sport',
-        year: 2016,
-        price: '£7000',
-        mileage: 77000,
-        fuelType: 'Diesel',
-        transmission: 'Manual',
-        engineSize: '2.0L',
-        status: 'available',
-        images: [
-            'cars/fordkuga/main1.jpeg',
-            'cars/fordkuga/main2.jpeg',
-            'cars/fordkuga/front.jpeg',     
-            'cars/fordkuga/main3.jpeg',
-            'cars/fordkuga/main4.jpeg',
-            'cars/fordkuga/back1.jpeg',
-            'cars/fordkuga/back2.jpeg',
-            'cars/fordkuga/back.jpeg',
-            'cars/fordkuga/back3.jpeg',
-            'cars/fordkuga/back4.jpeg',
-            'cars/fordkuga/boot.jpeg',
-            'cars/fordkuga/frontseats.jpeg',
-            'cars/fordkuga/frontseats2.jpeg',
-            'cars/fordkuga/backseats.jpeg',
-            'cars/fordkuga/backseats2.jpeg',
-            'cars/fordkuga/backseats3.jpeg',
-            'cars/fordkuga/center console.jpeg',
-            'cars/fordkuga/satnav.jpeg',
-            'cars/fordkuga/screen.jpeg', 
+    //  {
+    //     id: 'ford-kuga-2016',
+    //     title: 'Ford Kuga Titanium Sport',
+    //     year: 2016,
+    //     price: '£7000',
+    //     mileage: 77000,
+    //     fuelType: 'Diesel',
+    //     transmission: 'Manual',
+    //     engineSize: '2.0L',
+    //     status: 'available',
+    //     images: [
+    //         'cars/fordkuga/main1.jpeg',
+    //         'cars/fordkuga/main2.jpeg',
+    //         'cars/fordkuga/front.jpeg',     
+    //         'cars/fordkuga/main3.jpeg',
+    //         'cars/fordkuga/main4.jpeg',
+    //         'cars/fordkuga/back1.jpeg',
+    //         'cars/fordkuga/back2.jpeg',
+    //         'cars/fordkuga/back.jpeg',
+    //         'cars/fordkuga/back3.jpeg',
+    //         'cars/fordkuga/back4.jpeg',
+    //         'cars/fordkuga/boot.jpeg',
+    //         'cars/fordkuga/frontseats.jpeg',
+    //         'cars/fordkuga/frontseats2.jpeg',
+    //         'cars/fordkuga/backseats.jpeg',
+    //         'cars/fordkuga/backseats2.jpeg',
+    //         'cars/fordkuga/backseats3.jpeg',
+    //         'cars/fordkuga/center console.jpeg',
+    //         'cars/fordkuga/satnav.jpeg',
+    //         'cars/fordkuga/screen.jpeg', 
 
-        ],
-        description: `This Ford Kuga Titanium Sport is a fantastic choice if you need a practical SUV with reliable performance. The 2.0L Diesel engine strikes a great balance—it is powerful for the motorway but smooth for daily driving. The car drives perfectly and has just had the timing belt, water pump, and brakes replaced (with invoices). These were replaced at 75817 on the clock. It comes with Full-Service History and MOT until Dec next year. It comes with some nice features as well such as Central Locking, Electric Windows, Electric Mirrors, Keyless Start, Automatic Headlights, Cruise Control, Air Conditioning, Self-Parking, Sat Nav, AM/FM Stereo with Bluetooth Connectivity, Front and Rear Parking Sensors.`
-    },
+    //     ],
+    //     description: `This Ford Kuga Titanium Sport is a fantastic choice if you need a practical SUV with reliable performance. The 2.0L Diesel engine strikes a great balance—it is powerful for the motorway but smooth for daily driving. The car drives perfectly and has just had the timing belt, water pump, and brakes replaced (with invoices). These were replaced at 75817 on the clock. It comes with Full-Service History and MOT until Dec next year. It comes with some nice features as well such as Central Locking, Electric Windows, Electric Mirrors, Keyless Start, Automatic Headlights, Cruise Control, Air Conditioning, Self-Parking, Sat Nav, AM/FM Stereo with Bluetooth Connectivity, Front and Rear Parking Sensors.`
+    // },
     //  {
     //     id: 'kia-ceed-2020',
     //     title: 'Kia Ceed GDi ECO 2 Sportswagon Euro 6',
@@ -108,12 +108,11 @@ const vehicleDatabase = [
     // },
 
     
-
        {
         id: 'nissan-xtrail-2016',
         title: 'Nissan X-Trail Acenta',
         year: 2016,
-        price: '£7500',
+        price: '£7000',
         mileage: 58000,
         fuelType: 'Diesel',
         transmission: 'Manual',
@@ -148,6 +147,15 @@ const vehicleDatabase = [
         description: `This X-Trail Acenta is a low-mileage gem that feels fresh and has years of life left in it. The standout feature is the Panoramic Sunroof (check the photos), which floods the cabin with light and makes the whole car feel more premium. It’s practical, too, with Front and Rear Parking Sensors to help with the size, Dual Climate Control, and Cruise Control for motorway runs. We have just given it a fresh service to back up its Full Service History, and it comes with a long MOT until June 2026. A spacious, safe, and reliable family car that hasn't been overworked.` 
     },
     // Sold Vehicles section
+    {
+     id: 'ford-kuga-2016',
+        title: 'Ford Kuga Titanium Sport',
+        year: 2016,
+        status: 'sold',
+        images: [
+            'cars/soldcars/kuga.jpeg',
+        ]
+    },
     {
      id: 'kia-ceed-2020',
         title: 'Kia Ceed GDi ECO 2 Sportswagon Euro 6',
@@ -303,4 +311,4 @@ const vehicleDatabase = [
         images: [ 'cars/soldcars/nissanqas.webp' ],
     },
 ];
-const featuredVehicleIds = ['nissan-xtrail-2016','ford-ka-2019','ford-kuga-2016'];
+const featuredVehicleIds = ['nissan-xtrail-2016','ford-ka-2019',];
