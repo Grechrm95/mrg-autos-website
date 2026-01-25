@@ -1,5 +1,37 @@
 //car listing data for a vehicle inventory system
 const vehicleDatabase = [
+     {
+        id: 'hyundai-i20-2015',
+        title: 'Hyundai i20',
+        year: 2015,
+        price: '£4800',
+        mileage: 87300,
+        fuelType: 'Petrol',
+        transmission: 'Manual',
+        engineSize: '1.2L',
+        status: 'available',
+        images: [
+            'cars/Hyundai i20/main.jpg',
+            'cars/Hyundai i20/main2.jpg',
+            'cars/Hyundai i20/front.jpg',
+            'cars/Hyundai i20/main3.jpg',
+            'cars/Hyundai i20/main4.jpg',
+            'cars/Hyundai i20/back1.jpg',
+            'cars/Hyundai i20/back2.jpg',
+            'cars/Hyundai i20/back.jpg',
+            'cars/Hyundai i20/back3.jpg',
+            'cars/Hyundai i20/back4.jpg',
+            'cars/Hyundai i20/boot.jpg',
+            'cars/Hyundai i20/frontseats.jpg',
+            'cars/Hyundai i20/frontseats1.jpg',
+            'cars/Hyundai i20/dash.jpg',
+            'cars/Hyundai i20/backseats.jpg',
+            'cars/Hyundai i20/backseats1.jpg',
+            'cars/Hyundai i20/sterring.jpg',
+            'cars/Hyundai i20/radio.jpg',
+        ],
+        description: `A well-maintained Hyundai i20 in very good condition. Comes with Full-Service History, 2 Keys, and MOT until January 2027. It has just had a fresh service with the invoice present. Drives faultlessly. It also comes with some nice features as well which include Central Locking, Electric Windows, Electric Mirrors, AM/FM Stereo with Bluetooth Connectivity, Multi-Function Steering Wheel, Cruise Control and Rear Parking Sensors.`
+    },
     {
         id: 'ford-ka-2019',
         title: 'Ford KA+ Active',
@@ -68,45 +100,6 @@ const vehicleDatabase = [
     //     ],
     //     description: `This Ford Kuga Titanium Sport is a fantastic choice if you need a practical SUV with reliable performance. The 2.0L Diesel engine strikes a great balance—it is powerful for the motorway but smooth for daily driving. The car drives perfectly and has just had the timing belt, water pump, and brakes replaced (with invoices). These were replaced at 75817 on the clock. It comes with Full-Service History and MOT until Dec next year. It comes with some nice features as well such as Central Locking, Electric Windows, Electric Mirrors, Keyless Start, Automatic Headlights, Cruise Control, Air Conditioning, Self-Parking, Sat Nav, AM/FM Stereo with Bluetooth Connectivity, Front and Rear Parking Sensors.`
     // },
-    //  {
-    //     id: 'kia-ceed-2020',
-    //     title: 'Kia Ceed GDi ECO 2 Sportswagon Euro 6',
-    //     year: 2020,
-    //     price: '£9000',
-    //     mileage: 61351,
-    //     fuelType: 'Petrol',
-    //     transmission: 'Manual',
-    //     engineSize: '1.0L',
-    //     status: 'available',
-    //     images: [
-    //         'cars/Kia/main1.jpg',
-    //         'cars/Kia/main2.jpg',
-    //         'cars/Kia/front.jpg',
-    //         'cars/Kia/main3.jpg',
-    //         'cars/Kia/main4.jpg',
-    //         'cars/Kia/back1.jpg',
-    //         'cars/Kia/back2.jpg',
-    //         'cars/Kia/back.jpg',
-    //         'cars/Kia/back3.jpg',
-    //         'cars/Kia/back4.jpg',
-    //         'cars/Kia/boot.jpg',
-    //         'cars/Kia/forntseats.jpg',
-    //         'cars/Kia/frontseats1.jpg',
-    //         'cars/Kia/frontseats2.jpg',
-    //         'cars/Kia/frontseats3.jpg',
-    //         'cars/Kia/backseats.jpg',
-    //         'cars/Kia/backseats1.jpg',
-    //         'cars/Kia/backseats2.jpg',
-    //         'cars/Kia/dash.jpg',
-    //         'cars/Kia/dash1.jpg',
-    //         'cars/Kia/console.jpg',
-    //         'cars/Kia/console1.jpg',
-    //         'cars/Kia/console2.jpg',           
-    //     ],
-    //     description: `This Kia Ceed Sportswagon is a fantastic choice if you need the practicality of an estate without the high running costs. The 1.0L Turbo engine (6-speed) strikes a great balance—it is punchy enough for the motorway but keeps fuel and insurance costs down.
-    //      The car drives perfectly and it comes with service history and a fresh service. This car comes with some nice features which include Central Locking, Electric Windows,  AM/FM Stereo with Bluetooth Connectivity, Automatic Lights, Multi-Functioning Steering Wheel, Apple & Android CarPlay, Cruise Control and Revising Camera.`
-    // },
-
     
        {
         id: 'nissan-xtrail-2016',
@@ -311,4 +304,4 @@ const vehicleDatabase = [
         images: [ 'cars/soldcars/nissanqas.webp' ],
     },
 ];
-const featuredVehicleIds = ['nissan-xtrail-2016','ford-ka-2019',];
+const featuredVehicleIds = ['nissan-xtrail-2016','ford-ka-2019','hyundai-i20-2015'];
