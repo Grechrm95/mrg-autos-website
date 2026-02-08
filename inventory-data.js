@@ -134,45 +134,55 @@ const vehicleDatabase = [
     //     description: `This Ford Kuga Titanium Sport is a fantastic choice if you need a practical SUV with reliable performance. The 2.0L Diesel engine strikes a great balance—it is powerful for the motorway but smooth for daily driving. The car drives perfectly and has just had the timing belt, water pump, and brakes replaced (with invoices). These were replaced at 75817 on the clock. It comes with Full-Service History and MOT until Dec next year. It comes with some nice features as well such as Central Locking, Electric Windows, Electric Mirrors, Keyless Start, Automatic Headlights, Cruise Control, Air Conditioning, Self-Parking, Sat Nav, AM/FM Stereo with Bluetooth Connectivity, Front and Rear Parking Sensors.`
     // },
     
-       {
-        id: 'nissan-xtrail-2016',
+    //    {
+    //     id: 'nissan-xtrail-2016',
+    //     title: 'Nissan X-Trail Acenta',
+    //     year: 2016,
+    //     price: '£7,000',
+    //     mileage: 58000,
+    //     fuelType: 'Diesel',
+    //     transmission: 'Manual',
+    //     engineSize: '1.6L',
+    //     status: 'available',
+    //     images: [
+    //         'cars/nissanxtrail/main.webp',
+    //         'cars/nissanxtrail/left.webp',
+    //         'cars/nissanxtrail/backright2.webp',
+    //         'cars/nissanxtrail/backleft3.webp',
+    //         'cars/nissanxtrail/Front.webp',
+    //         'cars/nissanxtrail/back.webp',
+    //         'cars/nissanxtrail/boot.webp',
+    //         'cars/nissanxtrail/left2.webp',    
+    //         'cars/nissanxtrail/side.webp',           
+    //         'cars/nissanxtrail/backleft.webp',    
+    //         'cars/nissanxtrail/backleft2.webp',  
+    //         'cars/nissanxtrail/backright.webp',   
+    //         'cars/nissanxtrail/roof.webp',   
+    //         'cars/nissanxtrail/roofopen.webp',   
+    //         'cars/nissanxtrail/dash.webp',  
+    //         'cars/nissanxtrail/frontseats2.webp',  
+    //         'cars/nissanxtrail/frontseats.webp',
+    //         'cars/nissanxtrail/radio.webp',
+    //         'cars/nissanxtrail/backseats.webp',
+    //         'cars/nissanxtrail/backseats2.webp',  
+    //         'cars/nissanxtrail/wheel1.webp',   
+    //         'cars/nissanxtrail/wheel2.webp',   
+    //         'cars/nissanxtrail/wheel3.webp',
+    //         'cars/nissanxtrail/wheel4.webp'
+    //     ],
+    //     description: `This X-Trail Acenta is a low-mileage gem that feels fresh and has years of life left in it. The standout feature is the Panoramic Sunroof (check the photos), which floods the cabin with light and makes the whole car feel more premium. It’s practical, too, with Front and Rear Parking Sensors to help with the size, Dual Climate Control, and Cruise Control for motorway runs. We have just given it a fresh service to back up its Full Service History, and it comes with a long MOT until June 2026. A spacious, safe, and reliable family car that hasn't been overworked.` 
+    // },
+    // Sold Vehicles section
+   {
+    id: 'nissan-xtrail-2016',
         title: 'Nissan X-Trail Acenta',
         year: 2016,
-        price: '£7,000',
-        mileage: 58000,
-        fuelType: 'Diesel',
-        transmission: 'Manual',
-        engineSize: '1.6L',
-        status: 'available',
-        images: [
-            'cars/nissanxtrail/main.webp',
-            'cars/nissanxtrail/left.webp',
-            'cars/nissanxtrail/backright2.webp',
-            'cars/nissanxtrail/backleft3.webp',
-            'cars/nissanxtrail/Front.webp',
-            'cars/nissanxtrail/back.webp',
-            'cars/nissanxtrail/boot.webp',
-            'cars/nissanxtrail/left2.webp',    
-            'cars/nissanxtrail/side.webp',           
-            'cars/nissanxtrail/backleft.webp',    
-            'cars/nissanxtrail/backleft2.webp',  
-            'cars/nissanxtrail/backright.webp',   
-            'cars/nissanxtrail/roof.webp',   
-            'cars/nissanxtrail/roofopen.webp',   
-            'cars/nissanxtrail/dash.webp',  
-            'cars/nissanxtrail/frontseats2.webp',  
-            'cars/nissanxtrail/frontseats.webp',
-            'cars/nissanxtrail/radio.webp',
-            'cars/nissanxtrail/backseats.webp',
-            'cars/nissanxtrail/backseats2.webp',  
-            'cars/nissanxtrail/wheel1.webp',   
-            'cars/nissanxtrail/wheel2.webp',   
-            'cars/nissanxtrail/wheel3.webp',
-            'cars/nissanxtrail/wheel4.webp'
-        ],
-        description: `This X-Trail Acenta is a low-mileage gem that feels fresh and has years of life left in it. The standout feature is the Panoramic Sunroof (check the photos), which floods the cabin with light and makes the whole car feel more premium. It’s practical, too, with Front and Rear Parking Sensors to help with the size, Dual Climate Control, and Cruise Control for motorway runs. We have just given it a fresh service to back up its Full Service History, and it comes with a long MOT until June 2026. A spacious, safe, and reliable family car that hasn't been overworked.` 
-    },
-    // Sold Vehicles section
+        price: '£7,000',  
+        status: 'sold',
+         images: [
+            'cars/soldcars/xtrail.webp',
+        ]
+   },   
     {
      id: 'ford-kuga-2016',
         title: 'Ford Kuga Titanium Sport',
@@ -337,4 +347,4 @@ const vehicleDatabase = [
         images: [ 'cars/soldcars/nissanqas.webp' ],
     },
 ];
-const featuredVehicleIds = ['nissan-xtrail-2016','ford-ka-2019','hyundai-i20-2015'];
+const featuredVehicleIds = ['VW-Gold-2014','ford-ka-2019','hyundai-i20-2015'];
