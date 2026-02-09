@@ -103,14 +103,14 @@ const vehicleDatabase = [
     
     {
         id: 'VW-Gold-2014',
-        title: 'Volkswagen Golf S DEPOSIT TAKEN',
+        title: 'Volkswagen Golf S',
         year: 2014,
         price: '£5,500',
         mileage: 91297,
         fuelType: 'Diesel',
         transmission: 'Manual',
         engineSize: '1.6L',
-        status: 'available',
+        status: 'deposit',
         images: [
             'cars/golf/main.jpeg',
             'cars/golf/main1.jpeg',

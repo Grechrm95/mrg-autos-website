@@ -43,16 +43,16 @@ document.addEventListener("DOMContentLoaded", () => {
                     const carId = placeholder.dataset.carId;
                     const car = vehicles.find(c => c.id === carId);
                     
-                      // ...replace the lightweight placeholder with the full, heavy vehicle listing.
                     if (car) {
                         const vehicleElement = document.createElement('div');
                         vehicleElement.className = placeholder.className.replace('vehicle-placeholder', 'vehicle-listing');
-                        vehicleElement.dataset.carId = car.id;
                         
-                        // ACCESSIBILITY: Changed thumbnails to BUTTONS for keyboard access
-                        const thumbnailsHTML = car.images.length > 1 ? `<div class="vehicle-listing__thumbnails">${car.images.slice(0, 4).map((img, i) => `<button type="button" class="thumbnail-btn"><img src="${img}" alt="Thumbnail ${i + 1} of ${car.title}" class="thumbnail-img" data-index="${i}"></button>`).join('')}</div>` : '';
-                        
-                        // ACCESSIBILITY: Changed arrows to BUTTONS for keyboard access
+                        // Add class if deposit is taken
+                        if (car.status === 'deposit') {
+                            vehicleElement.classList.add('is-deposit');
+                        }
+
+                        const thumbnailsHTML = car.images.length > 1 ? `<div class="vehicle-listing__thumbnails">${car.images.slice(0, 4).map((img, i) => `<button type="button" class="thumbnail-btn"><img src="${img}" alt="Thumbnail ${i + 1}" class="thumbnail-img" data-index="${i}"></button>`).join('')}</div>` : '';
                         const carouselArrowsHTML = car.images.length > 1 ? `<button type="button" class="listing-prev" aria-label="Previous image">&#10094;</button><button type="button" class="listing-next" aria-label="Next image">&#10095;</button>` : '';
                         
                         vehicleElement.innerHTML = `
