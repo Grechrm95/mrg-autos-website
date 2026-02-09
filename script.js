@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Function to display featured vehicles on the homepage.
-    async function displayFeaturedVehicles(vehicles) {
+   async function displayFeaturedVehicles(vehicles) {
         if (!featuredGrid) return;  // Exit if not on the homepage.
         featuredGrid.innerHTML = '';
         const featured = vehicles.filter(car => featuredVehicleIds.includes(car.id));
@@ -119,6 +119,12 @@ document.addEventListener("DOMContentLoaded", () => {
                // (Code to build and append a smaller "vehicle card" for the homepage grid)
             const vehicleCard = document.createElement('div');
             vehicleCard.className = 'vehicle-card';
+            
+            // --- UPDATED: Add class if deposit is taken, showing the banner ---
+            if (car.status === 'deposit') {
+                vehicleCard.classList.add('is-deposit');
+            }
+
             vehicleCard.innerHTML = `
                 <a href="inventory.html" class="vehicle-card-img"><img src="${car.images[0]}" alt="${car.title}" loading="lazy"></a>
                 <div class="vehicle-card-content">
