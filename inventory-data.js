@@ -101,40 +101,50 @@ const vehicleDatabase = [
     //     description: `This Ford Kuga Titanium Sport is a fantastic choice if you need a practical SUV with reliable performance. The 2.0L Diesel engine strikes a great balance—it is powerful for the motorway but smooth for daily driving. The car drives perfectly and has just had the timing belt, water pump, and brakes replaced (with invoices). These were replaced at 75817 on the clock. It comes with Full-Service History and MOT until Dec next year. It comes with some nice features as well such as Central Locking, Electric Windows, Electric Mirrors, Keyless Start, Automatic Headlights, Cruise Control, Air Conditioning, Self-Parking, Sat Nav, AM/FM Stereo with Bluetooth Connectivity, Front and Rear Parking Sensors.`
     // },
     
+    // {
+    //     id: 'VW-Gold-2014',
+    //     title: 'Volkswagen Golf S',
+    //     year: 2014,
+    //     price: '£5,500',
+    //     mileage: 91297,
+    //     fuelType: 'Diesel',
+    //     transmission: 'Manual',
+    //     engineSize: '1.6L',
+    //     status: 'deposit',
+    //     images: [
+    //         'cars/golf/main.jpeg',
+    //         'cars/golf/main1.jpeg',
+    //         'cars/golf/main2.jpeg',
+    //         'cars/golf/front.jpeg',
+    //         'cars/golf/main3.jpeg',
+    //         'cars/golf/back1.jpeg',
+    //         'cars/golf/back2.jpeg',
+    //         'cars/golf/back.jpeg',
+    //         'cars/golf/back3.jpeg',
+    //         'cars/golf/back4.jpeg',
+    //         'cars/golf/boot.jpeg',
+    //         'cars/golf/frontseats.jpeg',
+    //         'cars/golf/frontseats1.jpeg',
+    //         'cars/golf/dash.jpeg',
+    //         'cars/golf/backseats.jpeg',
+    //         'cars/golf/backseats1.jpeg',
+    //         'cars/golf/centerconsole.jpeg',
+    //         'cars/golf/sterring.jpeg',
+    //         'cars/golf/radio.jpeg',
+    //     ],
+    //     description: `Volkswagen Golf S in excellent mechanical condition. Huge value added with recent major service items completed: New timing belt, water pump, and new brakes all around (invoices present). Includes Service History, 2 Keys, and MOT valid until January 2027. Features includes Central Locking, Electric Windows, Electric Mirrors, Air Conditioning, AM/FM Stereo with Bluetooth Connectivity, Hands Free and Rear Parking Sensors.`
+    //  },
+    // Sold Vehicles section
     {
-        id: 'VW-Gold-2014',
+    id: 'VW-Gold-2014',
         title: 'Volkswagen Golf S',
         year: 2014,
         price: '£5,500',
-        mileage: 91297,
-        fuelType: 'Diesel',
-        transmission: 'Manual',
-        engineSize: '1.6L',
-        status: 'deposit',
-        images: [
-            'cars/golf/main.jpeg',
-            'cars/golf/main1.jpeg',
-            'cars/golf/main2.jpeg',
-            'cars/golf/front.jpeg',
-            'cars/golf/main3.jpeg',
-            'cars/golf/back1.jpeg',
-            'cars/golf/back2.jpeg',
-            'cars/golf/back.jpeg',
-            'cars/golf/back3.jpeg',
-            'cars/golf/back4.jpeg',
-            'cars/golf/boot.jpeg',
-            'cars/golf/frontseats.jpeg',
-            'cars/golf/frontseats1.jpeg',
-            'cars/golf/dash.jpeg',
-            'cars/golf/backseats.jpeg',
-            'cars/golf/backseats1.jpeg',
-            'cars/golf/centerconsole.jpeg',
-            'cars/golf/sterring.jpeg',
-            'cars/golf/radio.jpeg',
-        ],
-        description: `Volkswagen Golf S in excellent mechanical condition. Huge value added with recent major service items completed: New timing belt, water pump, and new brakes all around (invoices present). Includes Service History, 2 Keys, and MOT valid until January 2027. Features includes Central Locking, Electric Windows, Electric Mirrors, Air Conditioning, AM/FM Stereo with Bluetooth Connectivity, Hands Free and Rear Parking Sensors.`
-     },
-    // Sold Vehicles section
+        status: 'sold',
+         images: [
+            'cars/soldcars/golf.jpeg',
+        ]
+    },
    {
     id: 'nissan-xtrail-2016',
         title: 'Nissan X-Trail Acenta',
@@ -309,4 +319,4 @@ const vehicleDatabase = [
         images: [ 'cars/soldcars/nissanqas.webp' ],
     },
 ];
-const featuredVehicleIds = ['VW-Gold-2014','ford-ka-2019','hyundai-i20-2015'];
+const featuredVehicleIds = ['ford-ka-2019','hyundai-i20-2015'];
