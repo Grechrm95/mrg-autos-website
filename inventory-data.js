@@ -316,4 +316,4 @@ const vehicleDatabase = [
         images: [ 'cars/soldcars/nissanqas.webp' ],
     },
 ];
-const featuredVehicleIds = ['ford-ka-2019','hyundai-i20-2015'];
+const featuredVehicleIds = ['ford-ka-2019','hyundai-i20-2015','Peugeot-partner-2019'];
