@@ -47,6 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         const vehicleElement = document.createElement('div');
                         vehicleElement.className = placeholder.className.replace('vehicle-placeholder', 'vehicle-listing');
                         
+                        vehicleElement.dataset.carId = car.id; 
+
                         // Add class if deposit is taken
                         if (car.status === 'deposit') {
                             vehicleElement.classList.add('is-deposit');
