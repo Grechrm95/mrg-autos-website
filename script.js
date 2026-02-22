@@ -198,23 +198,31 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         // Updates the main image, counter, and thumbnails inside the lightbox.
         function updateLightboxContent() {
-            lightboxImg.src = currentCarImages[currentImageIndex];
-            // ACCESSIBILITY: Update the Alt tag dynamically so screen readers know which car it is
-            lightboxImg.alt = `${currentCarTitle} - Image ${currentImageIndex + 1} of ${currentCarImages.length}`;
-            
-            if(lightboxCounter) lightboxCounter.textContent = `Image ${currentImageIndex + 1} of ${currentCarImages.length}`;
-            
-            // ACCESSIBILITY: Used Buttons for thumbnails
-            const thumbnailsHTML = currentCarImages.map((imgSrc, index) => 
-                `<button type="button" class="thumb-btn ${index === currentImageIndex ? 'active' : ''}">
-                    <img src="${imgSrc}" data-index="${index}" class="thumbnail-img ${index === currentImageIndex ? 'active' : ''}" alt="Thumbnail ${index + 1}">
-                 </button>`
-            ).join('');
-            
-            lightboxThumbContainer.innerHTML = thumbnailsHTML;
-            const activeThumb = lightboxThumbContainer.querySelector('.active');
-            if (activeThumb) activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    lightboxImg.src = currentCarImages[currentImageIndex];
+    lightboxImg.alt = `${currentCarTitle} - Image ${currentImageIndex + 1} of ${currentCarImages.length}`;
+    
+    if(lightboxCounter) lightboxCounter.textContent = `Image ${currentImageIndex + 1} of ${currentCarImages.length}`;
+    
+    const thumbnailsHTML = currentCarImages.map((imgSrc, index) => 
+        `<button type="button" class="thumb-btn ${index === currentImageIndex ? 'active' : ''}">
+            <img src="${imgSrc}" data-index="${index}" class="thumbnail-img ${index === currentImageIndex ? 'active' : ''}" alt="Thumbnail ${index + 1}">
+         </button>`
+    ).join('');
+    
+    lightboxThumbContainer.innerHTML = thumbnailsHTML;
+
+    // Fix: Add a slight delay to ensure the DOM has rendered the new thumbnails
+    setTimeout(() => {
+        const activeThumb = lightboxThumbContainer.querySelector('.thumb-btn.active');
+        if (activeThumb) {
+            activeThumb.scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'nearest', 
+                inline: 'center' 
+            });
         }
+    }, 50);
+}
 
         // Functions to navigate between images.
         function showNextImage() { currentImageIndex = (currentImageIndex + 1) % currentCarImages.length; updateLightboxContent(); }

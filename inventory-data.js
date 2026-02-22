@@ -2,7 +2,7 @@
 const vehicleDatabase = [
     {
         id: 'nissan-qashqai-2015',
-        title: 'PNissan Qashqai Tekna',
+        title: 'Nissan Qashqai Tekna',
         year: 2015,
         price: '£6,300',
         mileage: 76000,
