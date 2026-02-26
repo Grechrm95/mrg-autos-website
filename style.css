@@ -1089,6 +1089,12 @@ main {
         top: 15px;
         left: -35px;
     }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 16px !important;
+    }
 }
 
 @media (max-width: 500px) {
