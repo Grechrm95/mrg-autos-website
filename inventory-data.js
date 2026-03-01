@@ -76,7 +76,7 @@ const vehicleDatabase = [
         fuelType: 'Petrol',
         transmission: 'Manual',
         engineSize: '1.2L',
-        status: 'deposit',
+        status: 'available',
         images: [
             'cars/Hyundai i20/main.jpg',
             'cars/Hyundai i20/main2.jpg',
