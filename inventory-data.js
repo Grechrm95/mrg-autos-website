@@ -4,7 +4,7 @@ const vehicleDatabase = [
         id: 'nissan-qashqai-2015',
         title: 'Nissan Qashqai Tekna',
         year: 2015,
-        price: '£6,300',
+        price: '£6,000',
         mileage: 76000,
         fuelType: 'Diesel',
         transmission: 'Manual',
