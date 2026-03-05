@@ -1,6 +1,38 @@
 //car listing data for a vehicle inventory system
 const vehicleDatabase = [
     {
+        id: 'audi-a1-2014',
+        title: 'Audi A1 S-Line Style Edition',
+        year: 2014,
+        price: '£7,000',
+        mileage: 76000,
+        fuelType: 'Diesel',
+        transmission: 'Manual',
+        engineSize: '1.6L',
+        status: 'available',
+        images: [
+            'cars/Audi A1/main2.jpeg',
+            'cars/Audi A1/main.jpeg',            
+            'cars/Audi A1/front.jpeg',
+            'cars/Audi A1/main3.jpeg',            
+            'cars/Audi A1/main4.jpeg',
+            'cars/Audi A1/back1.jpeg',
+            'cars/Audi A1/back2.jpeg',
+            'cars/Audi A1/back.jpeg',
+            'cars/Audi A1/back4.jpeg',
+            'cars/Audi A1/boot.jpeg',
+            'cars/Audi A1/frontseats.jpeg',
+            'cars/Audi A1/frontseats1.jpeg',
+            'cars/Audi A1/backseats1.jpeg',
+            'cars/Audi A1/backseats2.jpeg',
+            'cars/Audi A1/centerconsole.jpeg',
+            'cars/Audi A1/centerconsole1.jpeg',
+            'cars/Audi A1/sterring.jpeg',
+            'cars/Audi A1/sunroof.jpeg',
+        ],
+        description: `Audi A1 S-Line Style Edition in very good condition. It’s a 1.6 Diesel 5 Speed manual with some service history. I've recently had some work done to it which includes a New Timing Belt with Waterpump, New Clutch, New Rear Brakes, Fresh Service and New Wishbone. It drives faultless and it comes with some nice features as well which include Central Locking, Electric Windows, Electric Windows, AM/FM Stereo with Bluetooth Connectivity, Hands Free, Air Conditioning, Climate Control, Multi-Functioning Steering Wheel, Sunroof and Rear Parking Sensors.`
+    },
+    {
         id: 'nissan-qashqai-2015',
         title: 'Nissan Qashqai Tekna',
         year: 2015,
@@ -352,4 +384,4 @@ const vehicleDatabase = [
         images: [ 'cars/soldcars/nissanqas.webp' ],
     },
 ];
-const featuredVehicleIds = ['ford-ka-2019','hyundai-i20-2015','Peugeot-partner-2019'];
+const featuredVehicleIds = ['ford-ka-2019','audi-a1-2014','Peugeot-partner-2019'];
